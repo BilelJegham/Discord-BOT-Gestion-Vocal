@@ -18,14 +18,20 @@ Discord BOT Gestion Vocal
 python3 -m pip install requirements.txt
 ```
 2. Obtenir un token pour le BOT
-    a. Créer une application sur https://discordapp.com/developers/applications/me
-    b. Créer un bot
-    c. Récupérer le **Token** du bot
-    d. Incorporer le Token dans le fichier `config.py` à la place de `XXXXXX`
-    ```py
+
+    1. Créer une application sur https://discordapp.com/developers/applications/me
+    
+    2. Créer un bot
+    
+    3. Récupérer le **Token** du BOT
+    
+    4. Incorporer le Token dans le fichier `config.py` à la place de `XXXXXX`
+```python
 apiBot = 'XXXXXX'
-    ```
+```
+
 3. Exécuter le fichier `bot.py`
+
 > **NOTE**  : un canal textuel logbot sera créé au 1er lancement du BOT, il affichera certaines opérations exécutées par le BOT
 
 
@@ -33,17 +39,17 @@ apiBot = 'XXXXXX'
 ## Commandes
 ### Pour tous les membres du serveur
 
-- `!move <channel-name>` : déplace le membre qui saisit la commande dans le canal vocal (uniquement pour les canaux vocaux crée via le bot)
+- `!move <channel-name>` : déplace le membre qui saisit la commande dans le canal vocal (uniquement pour les canaux vocaux crée via le BOT)
 
 ### Seulement aux administrateurs
 > Administrateur : membre disposant du rôle classé le plus haut dans la liste des rôles
 
 
-- `!moveChannelTop <channel-name>` : déplace le canal vocal en haut de la liste (uniquement pour les canaux vocaux crée via le bot)
+- `!moveChannelTop <channel-name>` : déplace le canal vocal en haut de la liste (uniquement pour les canaux vocaux crée via le BOT)
 - `!create` : crée un canal vocal avec un nom aléatoire
 - `!create <channel-name>` : crée un canal vocal avec le nom fournir
-- `!delete <channel-name>` : Supprime le canal vocal (uniquement pour les canaux vocaux via le bot)
-- `!delete ` : Supprime tous les canaux vocaux créent via le bot
+- `!delete <channel-name>` : Supprime le canal vocal (uniquement pour les canaux vocaux via le BOT)
+- `!delete ` : Supprime tous les canaux vocaux créent via le BOT
 - `!deleteAll` : Supprime tous les canaux vocaux sauf le canal vocal *General*
 
 
