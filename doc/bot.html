@@ -1,0 +1,2096 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module bot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>bot</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/mrbiljeg/Bureau/LastMate/lastmate/BOT/bot.py">/home/mrbiljeg/Bureau/LastMate/lastmate/BOT/bot.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;-*-&nbsp;coding:&nbsp;utf-8&nbsp;-*-</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="asyncio.html">asyncio</a><br>
+<a href="discord.calls.html">discord.calls</a><br>
+<a href="discord.channel.html">discord.channel</a><br>
+<a href="discord.client.html">discord.client</a><br>
+<a href="discord.colour.html">discord.colour</a><br>
+<a href="discord.compat.html">discord.compat</a><br>
+<a href="discord.embeds.html">discord.embeds</a><br>
+<a href="discord.emoji.html">discord.emoji</a><br>
+</td><td width="25%" valign=top><a href="discord.enums.html">discord.enums</a><br>
+<a href="discord.errors.html">discord.errors</a><br>
+<a href="discord.game.html">discord.game</a><br>
+<a href="discord.gateway.html">discord.gateway</a><br>
+<a href="discord.http.html">discord.http</a><br>
+<a href="discord.invite.html">discord.invite</a><br>
+<a href="discord.iterators.html">discord.iterators</a><br>
+<a href="logging.html">logging</a><br>
+</td><td width="25%" valign=top><a href="discord.member.html">discord.member</a><br>
+<a href="discord.message.html">discord.message</a><br>
+<a href="discord.mixins.html">discord.mixins</a><br>
+<a href="nomsChannel.html">nomsChannel</a><br>
+<a href="discord.object.html">discord.object</a><br>
+<a href="discord.opus.html">discord.opus</a><br>
+<a href="discord.permissions.html">discord.permissions</a><br>
+<a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="discord.reaction.html">discord.reaction</a><br>
+<a href="discord.role.html">discord.role</a><br>
+<a href="discord.server.html">discord.server</a><br>
+<a href="discord.state.html">discord.state</a><br>
+<a href="discord.user.html">discord.user</a><br>
+<a href="discord.utils.html">discord.utils</a><br>
+<a href="discord.voice_client.html">discord.voice_client</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="discord.client.html#Client">discord.client.Client</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="bot.html#Bot">Bot</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Bot">class <strong>Bot</strong></a>(<a href="discord.client.html#Client">discord.client.Client</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Classe&nbsp;<a href="#Bot">Bot</a>&nbsp;extend&nbsp;de&nbsp;discord.client<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="bot.html#Bot">Bot</a></dd>
+<dd><a href="discord.client.html#Client">discord.client.Client</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Bot-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Constructeur&nbsp;par&nbsp;defaut</tt></dd></dl>
+
+<dl><dt><a name="Bot-cree_channel"><strong>cree_channel</strong></a>(self)</dt><dd><tt>Crée&nbsp;un&nbsp;channel&nbsp;Vocal&nbsp;a&nbsp;partir&nbsp;de&nbsp;la&nbsp;liste&nbsp;de&nbsp;mot&nbsp;de&nbsp;`nomsChannel.py`<br>
+Return&nbsp;Channel</tt></dd></dl>
+
+<dl><dt><a name="Bot-lancer"><strong>lancer</strong></a>(self)</dt><dd><tt>Lance&nbsp;le&nbsp;<a href="#Bot">Bot</a>&nbsp;sur&nbsp;le&nbsp;serveur<br>
+Return&nbsp;True</tt></dd></dl>
+
+<dl><dt><a name="Bot-on_message"><strong>on_message</strong></a>(self, message)</dt><dd><tt>Lit&nbsp;les&nbsp;messages&nbsp;saisie&nbsp;sur&nbsp;le&nbsp;serveur</tt></dd></dl>
+
+<dl><dt><a name="Bot-on_ready"><strong>on_ready</strong></a>(self)</dt><dd><tt>Fonction&nbsp;quand&nbsp;le&nbsp;<a href="#Bot">Bot</a>&nbsp;est&nbsp;connecté<br>
+initialise&nbsp;les&nbsp;attributs&nbsp;de&nbsp;la&nbsp;classe</tt></dd></dl>
+
+<dl><dt><a name="Bot-suppr_channel"><strong>suppr_channel</strong></a>(self, nom)</dt><dd><tt>Supprime&nbsp;le&nbsp;channel&nbsp;Vocal&nbsp;crée&nbsp;par&nbsp;le&nbsp;bot&nbsp;a&nbsp;partir&nbsp;de&nbsp;son&nbsp;nom<br>
+Parameters&nbsp;:&nbsp;nom&nbsp;:&nbsp;nom&nbsp;du&nbsp;channel</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="discord.client.html#Client">discord.client.Client</a>:<br>
+<dl><dt><a name="Bot-__getattr__"><strong>__getattr__</strong></a>(self, name)</dt></dl>
+
+<dl><dt><a name="Bot-__setattr__"><strong>__setattr__</strong></a>(self, name, value)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="Bot-accept_invite"><strong>accept_invite</strong></a>(self, invite)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Accepts&nbsp;an&nbsp;:class:`Invite`,&nbsp;URL&nbsp;or&nbsp;ID&nbsp;to&nbsp;an&nbsp;invite.<br>
+&nbsp;<br>
+The&nbsp;URL&nbsp;must&nbsp;be&nbsp;a&nbsp;discord.gg&nbsp;URL.&nbsp;e.g.&nbsp;"<a href="http://discord.gg/codehere">http://discord.gg/codehere</a>".<br>
+An&nbsp;ID&nbsp;for&nbsp;the&nbsp;invite&nbsp;is&nbsp;just&nbsp;the&nbsp;"codehere"&nbsp;portion&nbsp;of&nbsp;the&nbsp;invite&nbsp;URL.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+invite<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;:class:`Invite`&nbsp;or&nbsp;URL&nbsp;to&nbsp;an&nbsp;invite&nbsp;to&nbsp;accept.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Accepting&nbsp;the&nbsp;invite&nbsp;failed.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;invite&nbsp;is&nbsp;invalid&nbsp;or&nbsp;expired.<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;are&nbsp;a&nbsp;bot&nbsp;user&nbsp;and&nbsp;cannot&nbsp;use&nbsp;this&nbsp;endpoint.</tt></dd></dl>
+
+<dl><dt><a name="Bot-add_reaction"><strong>add_reaction</strong></a>(self, message, emoji)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Add&nbsp;a&nbsp;reaction&nbsp;to&nbsp;the&nbsp;given&nbsp;message.<br>
+&nbsp;<br>
+The&nbsp;message&nbsp;must&nbsp;be&nbsp;a&nbsp;:class:`Message`&nbsp;that&nbsp;exists.&nbsp;emoji&nbsp;may&nbsp;be&nbsp;a&nbsp;unicode&nbsp;emoji,<br>
+or&nbsp;a&nbsp;custom&nbsp;server&nbsp;:class:`Emoji`.<br>
+&nbsp;<br>
+Parameters<br>
+------------<br>
+message&nbsp;:&nbsp;:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;to&nbsp;react&nbsp;to.<br>
+emoji&nbsp;:&nbsp;:class:`Emoji`&nbsp;or&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;emoji&nbsp;to&nbsp;react&nbsp;with.<br>
+&nbsp;<br>
+Raises<br>
+--------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Adding&nbsp;the&nbsp;reaction&nbsp;failed.<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;react&nbsp;to&nbsp;the&nbsp;message.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;emoji&nbsp;you&nbsp;specified&nbsp;was&nbsp;not&nbsp;found.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;emoji&nbsp;parameter&nbsp;is&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Bot-add_roles"><strong>add_roles</strong></a>(self, member, *roles)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Gives&nbsp;the&nbsp;specified&nbsp;:class:`Member`&nbsp;a&nbsp;number&nbsp;of&nbsp;:class:`Role`&nbsp;s.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;use&nbsp;this&nbsp;function.<br>
+&nbsp;<br>
+The&nbsp;:class:`Member`&nbsp;object&nbsp;is&nbsp;not&nbsp;directly&nbsp;modified&nbsp;afterwards&nbsp;until&nbsp;the<br>
+corresponding&nbsp;WebSocket&nbsp;event&nbsp;is&nbsp;received.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+member&nbsp;:&nbsp;:class:`Member`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;member&nbsp;to&nbsp;give&nbsp;roles&nbsp;to.<br>
+\*roles<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;argument&nbsp;list&nbsp;of&nbsp;:class:`Role`&nbsp;s&nbsp;to&nbsp;give&nbsp;the&nbsp;member.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;add&nbsp;roles.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Adding&nbsp;roles&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-application_info"><strong>application_info</strong></a>(self)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Retrieve's&nbsp;the&nbsp;bot's&nbsp;application&nbsp;information.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`AppInfo`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;namedtuple&nbsp;representing&nbsp;the&nbsp;application&nbsp;info.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Retrieving&nbsp;the&nbsp;information&nbsp;failed&nbsp;somehow.</tt></dd></dl>
+
+<dl><dt><a name="Bot-async_event"><strong>async_event</strong></a>(self, coro)</dt><dd><tt>A&nbsp;shorthand&nbsp;decorator&nbsp;for&nbsp;``asyncio.coroutine``&nbsp;+&nbsp;:meth:`event`.</tt></dd></dl>
+
+<dl><dt><a name="Bot-ban"><strong>ban</strong></a>(self, member, delete_message_days=1)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Bans&nbsp;a&nbsp;:class:`Member`&nbsp;from&nbsp;the&nbsp;server&nbsp;they&nbsp;belong&nbsp;to.<br>
+&nbsp;<br>
+Warning<br>
+--------<br>
+This&nbsp;function&nbsp;bans&nbsp;the&nbsp;:class:`Member`&nbsp;based&nbsp;on&nbsp;the&nbsp;server&nbsp;it<br>
+belongs&nbsp;to,&nbsp;which&nbsp;is&nbsp;accessed&nbsp;via&nbsp;:attr:`Member.server`.&nbsp;So&nbsp;you<br>
+must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;in&nbsp;that&nbsp;server.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+member&nbsp;:&nbsp;:class:`Member`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;member&nbsp;to&nbsp;ban&nbsp;from&nbsp;their&nbsp;server.<br>
+delete_message_days&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;days&nbsp;worth&nbsp;of&nbsp;messages&nbsp;to&nbsp;delete&nbsp;from&nbsp;the&nbsp;user<br>
+&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;the&nbsp;server.&nbsp;The&nbsp;minimum&nbsp;is&nbsp;0&nbsp;and&nbsp;the&nbsp;maximum&nbsp;is&nbsp;7.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;ban.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Banning&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-change_nickname"><strong>change_nickname</strong></a>(self, member, nickname)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Changes&nbsp;a&nbsp;member's&nbsp;nickname.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;change&nbsp;someone's<br>
+(or&nbsp;your&nbsp;own)&nbsp;nickname.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+member&nbsp;:&nbsp;:class:`Member`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;member&nbsp;to&nbsp;change&nbsp;the&nbsp;nickname&nbsp;for.<br>
+nickname&nbsp;:&nbsp;Optional[str]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;nickname&nbsp;to&nbsp;change&nbsp;it&nbsp;to.&nbsp;``None``&nbsp;to&nbsp;remove<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;nickname.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;change&nbsp;the&nbsp;nickname.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Changing&nbsp;the&nbsp;nickname&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-change_presence"><strong>change_presence</strong></a>(self, *, game=None, status=None, afk=False)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;client's&nbsp;presence.<br>
+&nbsp;<br>
+The&nbsp;game&nbsp;parameter&nbsp;is&nbsp;a&nbsp;Game&nbsp;object&nbsp;(not&nbsp;a&nbsp;string)&nbsp;that&nbsp;represents<br>
+a&nbsp;game&nbsp;being&nbsp;played&nbsp;currently.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+game:&nbsp;Optional[:class:`Game`]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;game&nbsp;being&nbsp;played.&nbsp;None&nbsp;if&nbsp;no&nbsp;game&nbsp;is&nbsp;being&nbsp;played.<br>
+status:&nbsp;Optional[:class:`Status`]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Indicates&nbsp;what&nbsp;status&nbsp;to&nbsp;change&nbsp;to.&nbsp;If&nbsp;None,&nbsp;then<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:attr:`Status.online`&nbsp;is&nbsp;used.<br>
+afk:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Indicates&nbsp;if&nbsp;you&nbsp;are&nbsp;going&nbsp;AFK.&nbsp;This&nbsp;allows&nbsp;the&nbsp;discord<br>
+&nbsp;&nbsp;&nbsp;&nbsp;client&nbsp;to&nbsp;know&nbsp;how&nbsp;to&nbsp;handle&nbsp;push&nbsp;notifications&nbsp;better<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;you&nbsp;in&nbsp;case&nbsp;you&nbsp;are&nbsp;actually&nbsp;idle&nbsp;and&nbsp;not&nbsp;lying.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;``game``&nbsp;parameter&nbsp;is&nbsp;not&nbsp;:class:`Game`&nbsp;or&nbsp;None.</tt></dd></dl>
+
+<dl><dt><a name="Bot-change_status"><strong>change_status</strong></a>(self, game=None, idle=False)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Changes&nbsp;the&nbsp;client's&nbsp;status.<br>
+&nbsp;<br>
+The&nbsp;game&nbsp;parameter&nbsp;is&nbsp;a&nbsp;Game&nbsp;object&nbsp;(not&nbsp;a&nbsp;string)&nbsp;that&nbsp;represents<br>
+a&nbsp;game&nbsp;being&nbsp;played&nbsp;currently.<br>
+&nbsp;<br>
+The&nbsp;idle&nbsp;parameter&nbsp;is&nbsp;a&nbsp;boolean&nbsp;parameter&nbsp;that&nbsp;indicates&nbsp;whether&nbsp;the<br>
+client&nbsp;should&nbsp;go&nbsp;idle&nbsp;or&nbsp;not.<br>
+&nbsp;<br>
+..&nbsp;deprecated::&nbsp;v0.13.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Use&nbsp;:meth:`change_presence`&nbsp;instead.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+game&nbsp;:&nbsp;Optional[:class:`Game`]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;game&nbsp;being&nbsp;played.&nbsp;None&nbsp;if&nbsp;no&nbsp;game&nbsp;is&nbsp;being&nbsp;played.<br>
+idle&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Indicates&nbsp;if&nbsp;the&nbsp;client&nbsp;should&nbsp;go&nbsp;idle.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;``game``&nbsp;parameter&nbsp;is&nbsp;not&nbsp;:class:`Game`&nbsp;or&nbsp;None.</tt></dd></dl>
+
+<dl><dt><a name="Bot-clear_reactions"><strong>clear_reactions</strong></a>(self, message)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Removes&nbsp;all&nbsp;the&nbsp;reactions&nbsp;from&nbsp;a&nbsp;given&nbsp;message.<br>
+&nbsp;<br>
+You&nbsp;need&nbsp;Manage&nbsp;Messages&nbsp;permission&nbsp;to&nbsp;use&nbsp;this.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+message:&nbsp;:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;to&nbsp;remove&nbsp;all&nbsp;reactions&nbsp;from.<br>
+&nbsp;<br>
+Raises<br>
+--------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Removing&nbsp;the&nbsp;reactions&nbsp;failed.<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;remove&nbsp;all&nbsp;the&nbsp;reactions.</tt></dd></dl>
+
+<dl><dt><a name="Bot-close"><strong>close</strong></a>(self)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Closes&nbsp;the&nbsp;connection&nbsp;to&nbsp;discord.</tt></dd></dl>
+
+<dl><dt><a name="Bot-connect"><strong>connect</strong></a>(self)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Creates&nbsp;a&nbsp;websocket&nbsp;connection&nbsp;and&nbsp;lets&nbsp;the&nbsp;websocket&nbsp;listen<br>
+to&nbsp;messages&nbsp;from&nbsp;discord.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+GatewayNotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;gateway&nbsp;to&nbsp;connect&nbsp;to&nbsp;discord&nbsp;is&nbsp;not&nbsp;found.&nbsp;Usually&nbsp;if&nbsp;this<br>
+&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;thrown&nbsp;then&nbsp;there&nbsp;is&nbsp;a&nbsp;discord&nbsp;API&nbsp;outage.<br>
+ConnectionClosed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;websocket&nbsp;connection&nbsp;has&nbsp;been&nbsp;terminated.</tt></dd></dl>
+
+<dl><dt><a name="Bot-create_channel"><strong>create_channel</strong></a>(self, server, name, *overwrites, type=None)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Creates&nbsp;a&nbsp;:class:`Channel`&nbsp;in&nbsp;the&nbsp;specified&nbsp;:class:`Server`.<br>
+&nbsp;<br>
+Note&nbsp;that&nbsp;you&nbsp;need&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;create&nbsp;the&nbsp;channel.<br>
+&nbsp;<br>
+The&nbsp;``overwrites``&nbsp;argument&nbsp;list&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;create&nbsp;a&nbsp;'secret'<br>
+channel&nbsp;upon&nbsp;creation.&nbsp;A&nbsp;namedtuple&nbsp;of&nbsp;:class:`ChannelPermissions`<br>
+is&nbsp;exposed&nbsp;to&nbsp;create&nbsp;a&nbsp;channel-specific&nbsp;permission&nbsp;overwrite&nbsp;in&nbsp;a&nbsp;more<br>
+self-documenting&nbsp;matter.&nbsp;You&nbsp;can&nbsp;also&nbsp;use&nbsp;a&nbsp;regular&nbsp;tuple&nbsp;of&nbsp;``(target,&nbsp;overwrite)``<br>
+where&nbsp;the&nbsp;``overwrite``&nbsp;expected&nbsp;has&nbsp;to&nbsp;be&nbsp;of&nbsp;type&nbsp;:class:`PermissionOverwrite`.<br>
+&nbsp;<br>
+Examples<br>
+----------<br>
+&nbsp;<br>
+Creating&nbsp;a&nbsp;voice&nbsp;channel:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-create_channel">create_channel</a>(server,&nbsp;'Voice',&nbsp;type=discord.ChannelType.voice)<br>
+&nbsp;<br>
+Creating&nbsp;a&nbsp;'secret'&nbsp;text&nbsp;channel:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;everyone_perms&nbsp;=&nbsp;discord.PermissionOverwrite(read_messages=False)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;my_perms&nbsp;=&nbsp;discord.PermissionOverwrite(read_messages=True)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;everyone&nbsp;=&nbsp;discord.ChannelPermissions(target=server.default_role,&nbsp;overwrite=everyone_perms)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mine&nbsp;=&nbsp;discord.ChannelPermissions(target=server.me,&nbsp;overwrite=my_perms)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-create_channel">create_channel</a>(server,&nbsp;'secret',&nbsp;everyone,&nbsp;mine)<br>
+&nbsp;<br>
+Or&nbsp;in&nbsp;a&nbsp;more&nbsp;'compact'&nbsp;way:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;everyone&nbsp;=&nbsp;discord.PermissionOverwrite(read_messages=False)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mine&nbsp;=&nbsp;discord.PermissionOverwrite(read_messages=True)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-create_channel">create_channel</a>(server,&nbsp;'secret',&nbsp;(server.default_role,&nbsp;everyone),&nbsp;(server.me,&nbsp;mine))<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;create&nbsp;the&nbsp;channel&nbsp;in.<br>
+name&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel's&nbsp;name.<br>
+type&nbsp;:&nbsp;:class:`ChannelType`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;type&nbsp;of&nbsp;channel&nbsp;to&nbsp;create.&nbsp;Defaults&nbsp;to&nbsp;:attr:`ChannelType.text`.<br>
+overwrites:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;argument&nbsp;list&nbsp;of&nbsp;channel&nbsp;specific&nbsp;overwrites&nbsp;to&nbsp;apply&nbsp;on&nbsp;the&nbsp;channel&nbsp;on<br>
+&nbsp;&nbsp;&nbsp;&nbsp;creation.&nbsp;Useful&nbsp;for&nbsp;creating&nbsp;'secret'&nbsp;channels.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;create&nbsp;the&nbsp;channel.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;specified&nbsp;was&nbsp;not&nbsp;found.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Creating&nbsp;the&nbsp;channel&nbsp;failed.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;permission&nbsp;overwrite&nbsp;array&nbsp;is&nbsp;not&nbsp;in&nbsp;proper&nbsp;form.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+:class:`Channel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;that&nbsp;was&nbsp;just&nbsp;created.&nbsp;This&nbsp;channel&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;different&nbsp;than&nbsp;the&nbsp;one&nbsp;that&nbsp;will&nbsp;be&nbsp;added&nbsp;in&nbsp;cache.</tt></dd></dl>
+
+<dl><dt><a name="Bot-create_custom_emoji"><strong>create_custom_emoji</strong></a>(self, server, *, name, image)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Creates&nbsp;a&nbsp;custom&nbsp;:class:`Emoji`&nbsp;for&nbsp;a&nbsp;:class:`Server`.<br>
+&nbsp;<br>
+This&nbsp;endpoint&nbsp;is&nbsp;only&nbsp;allowed&nbsp;for&nbsp;user&nbsp;bots&nbsp;or&nbsp;white&nbsp;listed<br>
+bots.&nbsp;If&nbsp;this&nbsp;is&nbsp;done&nbsp;by&nbsp;a&nbsp;user&nbsp;bot&nbsp;then&nbsp;this&nbsp;is&nbsp;a&nbsp;local<br>
+emoji&nbsp;that&nbsp;can&nbsp;only&nbsp;be&nbsp;used&nbsp;inside&nbsp;that&nbsp;server.<br>
+&nbsp;<br>
+There&nbsp;is&nbsp;currently&nbsp;a&nbsp;limit&nbsp;of&nbsp;50&nbsp;local&nbsp;emotes&nbsp;per&nbsp;server.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;add&nbsp;the&nbsp;emoji&nbsp;to.<br>
+name:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;emoji&nbsp;name.&nbsp;Must&nbsp;be&nbsp;at&nbsp;least&nbsp;2&nbsp;characters.<br>
+image:&nbsp;bytes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;*bytes-like*&nbsp;object&nbsp;representing&nbsp;the&nbsp;image&nbsp;data&nbsp;to&nbsp;use.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Only&nbsp;JPG&nbsp;and&nbsp;PNG&nbsp;images&nbsp;are&nbsp;supported.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`Emoji`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;created&nbsp;emoji.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;are&nbsp;not&nbsp;allowed&nbsp;to&nbsp;create&nbsp;emojis.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;error&nbsp;occurred&nbsp;creating&nbsp;an&nbsp;emoji.</tt></dd></dl>
+
+<dl><dt><a name="Bot-create_invite"><strong>create_invite</strong></a>(self, destination, **options)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Creates&nbsp;an&nbsp;invite&nbsp;for&nbsp;the&nbsp;destination&nbsp;which&nbsp;could&nbsp;be&nbsp;either&nbsp;a<br>
+:class:`Server`&nbsp;or&nbsp;:class:`Channel`.<br>
+&nbsp;<br>
+Parameters<br>
+------------<br>
+destination<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;:class:`Server`&nbsp;or&nbsp;:class:`Channel`&nbsp;to&nbsp;create&nbsp;the&nbsp;invite&nbsp;to.<br>
+max_age&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;How&nbsp;long&nbsp;the&nbsp;invite&nbsp;should&nbsp;last.&nbsp;If&nbsp;it's&nbsp;0&nbsp;then&nbsp;the&nbsp;invite<br>
+&nbsp;&nbsp;&nbsp;&nbsp;doesn't&nbsp;expire.&nbsp;Defaults&nbsp;to&nbsp;0.<br>
+max_uses&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;How&nbsp;many&nbsp;uses&nbsp;the&nbsp;invite&nbsp;could&nbsp;be&nbsp;used&nbsp;for.&nbsp;If&nbsp;it's&nbsp;0&nbsp;then&nbsp;there<br>
+&nbsp;&nbsp;&nbsp;&nbsp;are&nbsp;unlimited&nbsp;uses.&nbsp;Defaults&nbsp;to&nbsp;0.<br>
+temporary&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Denotes&nbsp;that&nbsp;the&nbsp;invite&nbsp;grants&nbsp;temporary&nbsp;membership<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(i.e.&nbsp;they&nbsp;get&nbsp;kicked&nbsp;after&nbsp;they&nbsp;disconnect).&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+unique:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Indicates&nbsp;if&nbsp;a&nbsp;unique&nbsp;invite&nbsp;URL&nbsp;should&nbsp;be&nbsp;created.&nbsp;Defaults&nbsp;to&nbsp;True.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;this&nbsp;is&nbsp;set&nbsp;to&nbsp;False&nbsp;then&nbsp;it&nbsp;will&nbsp;return&nbsp;a&nbsp;previously&nbsp;created<br>
+&nbsp;&nbsp;&nbsp;&nbsp;invite.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Invite&nbsp;creation&nbsp;failed.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`Invite`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;invite&nbsp;that&nbsp;was&nbsp;created.</tt></dd></dl>
+
+<dl><dt><a name="Bot-create_role"><strong>create_role</strong></a>(self, server, **fields)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Creates&nbsp;a&nbsp;:class:`Role`.<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;is&nbsp;similar&nbsp;to&nbsp;:class:`edit_role`&nbsp;in&nbsp;both<br>
+the&nbsp;fields&nbsp;taken&nbsp;and&nbsp;exceptions&nbsp;thrown.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`Role`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;newly&nbsp;created&nbsp;role.&nbsp;This&nbsp;not&nbsp;the&nbsp;same&nbsp;role&nbsp;that<br>
+&nbsp;&nbsp;&nbsp;&nbsp;is&nbsp;stored&nbsp;in&nbsp;cache.</tt></dd></dl>
+
+<dl><dt><a name="Bot-create_server"><strong>create_server</strong></a>(self, name, region=None, icon=None)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Creates&nbsp;a&nbsp;:class:`Server`.<br>
+&nbsp;<br>
+<a href="#Bot">Bot</a>&nbsp;accounts&nbsp;generally&nbsp;are&nbsp;not&nbsp;allowed&nbsp;to&nbsp;create&nbsp;servers.<br>
+See&nbsp;Discord's&nbsp;official&nbsp;documentation&nbsp;for&nbsp;more&nbsp;info.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+name&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;server.<br>
+region&nbsp;:&nbsp;:class:`ServerRegion`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;region&nbsp;for&nbsp;the&nbsp;voice&nbsp;communication&nbsp;server.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;:attr:`ServerRegion.us_west`.<br>
+icon&nbsp;:&nbsp;bytes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;*bytes-like*&nbsp;object&nbsp;representing&nbsp;the&nbsp;icon.&nbsp;See&nbsp;:meth:`edit_profile`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;more&nbsp;details&nbsp;on&nbsp;what&nbsp;is&nbsp;expected.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Server&nbsp;creation&nbsp;failed.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Invalid&nbsp;icon&nbsp;image&nbsp;format&nbsp;given.&nbsp;Must&nbsp;be&nbsp;PNG&nbsp;or&nbsp;JPG.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;created.&nbsp;This&nbsp;is&nbsp;not&nbsp;the&nbsp;same&nbsp;server&nbsp;that&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;added&nbsp;to&nbsp;cache.</tt></dd></dl>
+
+<dl><dt><a name="Bot-delete_channel"><strong>delete_channel</strong></a>(self, channel)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Deletes&nbsp;a&nbsp;:class:`Channel`.<br>
+&nbsp;<br>
+In&nbsp;order&nbsp;to&nbsp;delete&nbsp;the&nbsp;channel,&nbsp;the&nbsp;client&nbsp;must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions<br>
+in&nbsp;the&nbsp;server&nbsp;the&nbsp;channel&nbsp;belongs&nbsp;to.<br>
+&nbsp;<br>
+Parameters<br>
+------------<br>
+channel&nbsp;:&nbsp;:class:`Channel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;to&nbsp;delete.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;delete&nbsp;the&nbsp;channel.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;specified&nbsp;channel&nbsp;was&nbsp;not&nbsp;found.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Deleting&nbsp;the&nbsp;channel&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-delete_channel_permissions"><strong>delete_channel_permissions</strong></a>(self, channel, target)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Removes&nbsp;a&nbsp;channel&nbsp;specific&nbsp;permission&nbsp;overwrites&nbsp;for&nbsp;a&nbsp;target<br>
+in&nbsp;the&nbsp;specified&nbsp;:class:`Channel`.<br>
+&nbsp;<br>
+The&nbsp;target&nbsp;parameter&nbsp;follows&nbsp;the&nbsp;same&nbsp;rules&nbsp;as&nbsp;:meth:`edit_channel_permissions`.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;do&nbsp;this.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+channel&nbsp;:&nbsp;:class:`Channel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;to&nbsp;give&nbsp;the&nbsp;specific&nbsp;permissions&nbsp;for.<br>
+target<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;:class:`Member`&nbsp;or&nbsp;:class:`Role`&nbsp;to&nbsp;overwrite&nbsp;permissions&nbsp;for.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;delete&nbsp;channel&nbsp;specific&nbsp;permissions.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;specified&nbsp;was&nbsp;not&nbsp;found.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Deleting&nbsp;channel&nbsp;specific&nbsp;permissions&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-delete_custom_emoji"><strong>delete_custom_emoji</strong></a>(self, emoji)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Deletes&nbsp;a&nbsp;custom&nbsp;:class:`Emoji`&nbsp;from&nbsp;a&nbsp;:class:`Server`.<br>
+&nbsp;<br>
+This&nbsp;follows&nbsp;the&nbsp;same&nbsp;rules&nbsp;as&nbsp;:meth:`create_custom_emoji`.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+emoji:&nbsp;:class:`Emoji`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;emoji&nbsp;to&nbsp;delete.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;are&nbsp;not&nbsp;allowed&nbsp;to&nbsp;delete&nbsp;emojis.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;error&nbsp;occurred&nbsp;deleting&nbsp;the&nbsp;emoji.</tt></dd></dl>
+
+<dl><dt><a name="Bot-delete_invite"><strong>delete_invite</strong></a>(self, invite)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Revokes&nbsp;an&nbsp;:class:`Invite`,&nbsp;URL,&nbsp;or&nbsp;ID&nbsp;to&nbsp;an&nbsp;invite.<br>
+&nbsp;<br>
+The&nbsp;``invite``&nbsp;parameter&nbsp;follows&nbsp;the&nbsp;same&nbsp;rules&nbsp;as<br>
+:meth:`accept_invite`.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+invite<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;invite&nbsp;to&nbsp;revoke.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;revoke&nbsp;invites.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;invite&nbsp;is&nbsp;invalid&nbsp;or&nbsp;expired.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Revoking&nbsp;the&nbsp;invite&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-delete_message"><strong>delete_message</strong></a>(self, message)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Deletes&nbsp;a&nbsp;:class:`Message`.<br>
+&nbsp;<br>
+Your&nbsp;own&nbsp;messages&nbsp;could&nbsp;be&nbsp;deleted&nbsp;without&nbsp;any&nbsp;proper&nbsp;permissions.&nbsp;However&nbsp;to<br>
+delete&nbsp;other&nbsp;people's&nbsp;messages,&nbsp;you&nbsp;need&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;do&nbsp;so.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+message&nbsp;:&nbsp;:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;to&nbsp;delete.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;delete&nbsp;the&nbsp;message.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Deleting&nbsp;the&nbsp;message&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-delete_messages"><strong>delete_messages</strong></a>(self, messages)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Deletes&nbsp;a&nbsp;list&nbsp;of&nbsp;messages.&nbsp;This&nbsp;is&nbsp;similar&nbsp;to&nbsp;:func:`delete_message`<br>
+except&nbsp;it&nbsp;bulk&nbsp;deletes&nbsp;multiple&nbsp;messages.<br>
+&nbsp;<br>
+The&nbsp;channel&nbsp;to&nbsp;check&nbsp;where&nbsp;the&nbsp;message&nbsp;is&nbsp;deleted&nbsp;from&nbsp;is&nbsp;handled&nbsp;via<br>
+the&nbsp;first&nbsp;element&nbsp;of&nbsp;the&nbsp;iterable's&nbsp;``.channel.id``&nbsp;attributes.&nbsp;If&nbsp;the<br>
+channel&nbsp;is&nbsp;not&nbsp;consistent&nbsp;throughout&nbsp;the&nbsp;entire&nbsp;sequence,&nbsp;then&nbsp;an<br>
+:exc:`HTTPException`&nbsp;will&nbsp;be&nbsp;raised.<br>
+&nbsp;<br>
+Usable&nbsp;only&nbsp;by&nbsp;bot&nbsp;accounts.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+messages&nbsp;:&nbsp;iterable&nbsp;of&nbsp;:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;iterable&nbsp;of&nbsp;messages&nbsp;denoting&nbsp;which&nbsp;ones&nbsp;to&nbsp;bulk&nbsp;delete.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+ClientException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;messages&nbsp;to&nbsp;delete&nbsp;is&nbsp;less&nbsp;than&nbsp;2&nbsp;or&nbsp;more&nbsp;than&nbsp;100.<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;delete&nbsp;the&nbsp;messages&nbsp;or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;you're&nbsp;not&nbsp;using&nbsp;a&nbsp;bot&nbsp;account.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Deleting&nbsp;the&nbsp;messages&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-delete_role"><strong>delete_role</strong></a>(self, server, role)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Deletes&nbsp;the&nbsp;specified&nbsp;:class:`Role`&nbsp;for&nbsp;the&nbsp;entire&nbsp;:class:`Server`.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;the&nbsp;role&nbsp;belongs&nbsp;to.<br>
+role&nbsp;:&nbsp;:class:`Role`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;role&nbsp;to&nbsp;delete.<br>
+&nbsp;<br>
+Raises<br>
+--------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;delete&nbsp;the&nbsp;role.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Deleting&nbsp;the&nbsp;role&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-delete_server"><strong>delete_server</strong></a>(self, server)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Deletes&nbsp;a&nbsp;:class:`Server`.&nbsp;You&nbsp;must&nbsp;be&nbsp;the&nbsp;server&nbsp;owner&nbsp;to&nbsp;delete&nbsp;the<br>
+server.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;delete.<br>
+&nbsp;<br>
+Raises<br>
+--------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;deleting&nbsp;the&nbsp;server&nbsp;failed.<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;delete&nbsp;the&nbsp;server.</tt></dd></dl>
+
+<dl><dt><a name="Bot-dispatch"><strong>dispatch</strong></a>(self, event, *args, **kwargs)</dt></dl>
+
+<dl><dt><a name="Bot-edit_channel"><strong>edit_channel</strong></a>(self, channel, **options)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Edits&nbsp;a&nbsp;:class:`Channel`.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;edit&nbsp;the&nbsp;channel.<br>
+&nbsp;<br>
+To&nbsp;move&nbsp;the&nbsp;channel's&nbsp;position&nbsp;use&nbsp;:meth:`move_channel`&nbsp;instead.<br>
+&nbsp;<br>
+The&nbsp;:class:`Channel`&nbsp;object&nbsp;is&nbsp;not&nbsp;directly&nbsp;modified&nbsp;afterwards&nbsp;until&nbsp;the<br>
+corresponding&nbsp;WebSocket&nbsp;event&nbsp;is&nbsp;received.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+channel&nbsp;:&nbsp;:class:`Channel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;to&nbsp;update.<br>
+name&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;channel&nbsp;name.<br>
+topic&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;channel's&nbsp;topic.<br>
+bitrate&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;channel's&nbsp;bitrate.&nbsp;Voice&nbsp;only.<br>
+user_limit&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;channel's&nbsp;user&nbsp;limit.&nbsp;Voice&nbsp;only.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;edit&nbsp;the&nbsp;channel.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Editing&nbsp;the&nbsp;channel&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-edit_channel_permissions"><strong>edit_channel_permissions</strong></a>(self, channel, target, overwrite=None)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Sets&nbsp;the&nbsp;channel&nbsp;specific&nbsp;permission&nbsp;overwrites&nbsp;for&nbsp;a&nbsp;target&nbsp;in&nbsp;the<br>
+specified&nbsp;:class:`Channel`.<br>
+&nbsp;<br>
+The&nbsp;``target``&nbsp;parameter&nbsp;should&nbsp;either&nbsp;be&nbsp;a&nbsp;:class:`Member`&nbsp;or&nbsp;a<br>
+:class:`Role`&nbsp;that&nbsp;belongs&nbsp;to&nbsp;the&nbsp;channel's&nbsp;server.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;do&nbsp;this.<br>
+&nbsp;<br>
+Examples<br>
+----------<br>
+&nbsp;<br>
+Setting&nbsp;allow&nbsp;and&nbsp;deny:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;overwrite&nbsp;=&nbsp;discord.PermissionOverwrite()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;overwrite.read_messages&nbsp;=&nbsp;True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;overwrite.ban_members&nbsp;=&nbsp;False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;yield&nbsp;from&nbsp;client.<a href="#Bot-edit_channel_permissions">edit_channel_permissions</a>(message.channel,&nbsp;message.author,&nbsp;overwrite)<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+channel&nbsp;:&nbsp;:class:`Channel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;to&nbsp;give&nbsp;the&nbsp;specific&nbsp;permissions&nbsp;for.<br>
+target<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;:class:`Member`&nbsp;or&nbsp;:class:`Role`&nbsp;to&nbsp;overwrite&nbsp;permissions&nbsp;for.<br>
+overwrite:&nbsp;:class:`PermissionOverwrite`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;permissions&nbsp;to&nbsp;allow&nbsp;and&nbsp;deny&nbsp;to&nbsp;the&nbsp;target.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;edit&nbsp;channel&nbsp;specific&nbsp;permissions.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;specified&nbsp;was&nbsp;not&nbsp;found.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Editing&nbsp;channel&nbsp;specific&nbsp;permissions&nbsp;failed.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;overwrite&nbsp;parameter&nbsp;was&nbsp;not&nbsp;of&nbsp;type&nbsp;:class:`PermissionOverwrite`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;the&nbsp;target&nbsp;type&nbsp;was&nbsp;not&nbsp;:class:`Role`&nbsp;or&nbsp;:class:`Member`.</tt></dd></dl>
+
+<dl><dt><a name="Bot-edit_custom_emoji"><strong>edit_custom_emoji</strong></a>(self, emoji, *, name)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Edits&nbsp;a&nbsp;:class:`Emoji`.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+emoji:&nbsp;:class:`Emoji`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;emoji&nbsp;to&nbsp;edit.<br>
+name:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;emoji&nbsp;name.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;are&nbsp;not&nbsp;allowed&nbsp;to&nbsp;edit&nbsp;emojis.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;error&nbsp;occurred&nbsp;editing&nbsp;the&nbsp;emoji.</tt></dd></dl>
+
+<dl><dt><a name="Bot-edit_message"><strong>edit_message</strong></a>(self, message, new_content=None, *, embed=None)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Edits&nbsp;a&nbsp;:class:`Message`&nbsp;with&nbsp;the&nbsp;new&nbsp;message&nbsp;content.<br>
+&nbsp;<br>
+The&nbsp;new_content&nbsp;must&nbsp;be&nbsp;able&nbsp;to&nbsp;be&nbsp;transformed&nbsp;into&nbsp;a&nbsp;string&nbsp;via&nbsp;``str(new_content)``.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;``new_content``&nbsp;is&nbsp;not&nbsp;provided,&nbsp;then&nbsp;``embed``&nbsp;must&nbsp;be&nbsp;provided,&nbsp;which&nbsp;must<br>
+be&nbsp;of&nbsp;type&nbsp;:class:`Embed`.<br>
+&nbsp;<br>
+The&nbsp;:class:`Message`&nbsp;object&nbsp;is&nbsp;not&nbsp;directly&nbsp;modified&nbsp;afterwards&nbsp;until&nbsp;the<br>
+corresponding&nbsp;WebSocket&nbsp;event&nbsp;is&nbsp;received.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+message&nbsp;:&nbsp;:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;to&nbsp;edit.<br>
+new_content<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;content&nbsp;to&nbsp;replace&nbsp;the&nbsp;message&nbsp;with.<br>
+embed:&nbsp;:class:`Embed`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;embed&nbsp;to&nbsp;replace&nbsp;the&nbsp;original&nbsp;embed&nbsp;with.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Editing&nbsp;the&nbsp;message&nbsp;failed.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;edited&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="Bot-edit_profile"><strong>edit_profile</strong></a>(self, password=None, **fields)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Edits&nbsp;the&nbsp;current&nbsp;profile&nbsp;of&nbsp;the&nbsp;client.<br>
+&nbsp;<br>
+If&nbsp;a&nbsp;bot&nbsp;account&nbsp;is&nbsp;used&nbsp;then&nbsp;the&nbsp;password&nbsp;field&nbsp;is&nbsp;optional,<br>
+otherwise&nbsp;it&nbsp;is&nbsp;required.<br>
+&nbsp;<br>
+The&nbsp;:attr:`<a href="discord.client.html#Client">Client</a>.user`&nbsp;object&nbsp;is&nbsp;not&nbsp;modified&nbsp;directly&nbsp;afterwards&nbsp;until&nbsp;the<br>
+corresponding&nbsp;WebSocket&nbsp;event&nbsp;is&nbsp;received.<br>
+&nbsp;<br>
+Note<br>
+-----<br>
+To&nbsp;upload&nbsp;an&nbsp;avatar,&nbsp;a&nbsp;*bytes-like&nbsp;object*&nbsp;must&nbsp;be&nbsp;passed&nbsp;in&nbsp;that<br>
+represents&nbsp;the&nbsp;image&nbsp;being&nbsp;uploaded.&nbsp;If&nbsp;this&nbsp;is&nbsp;done&nbsp;through&nbsp;a&nbsp;file<br>
+then&nbsp;the&nbsp;file&nbsp;must&nbsp;be&nbsp;opened&nbsp;via&nbsp;``open('some_filename',&nbsp;'rb')``&nbsp;and<br>
+the&nbsp;*bytes-like&nbsp;object*&nbsp;is&nbsp;given&nbsp;through&nbsp;the&nbsp;use&nbsp;of&nbsp;``fp.read()``.<br>
+&nbsp;<br>
+The&nbsp;only&nbsp;image&nbsp;formats&nbsp;supported&nbsp;for&nbsp;uploading&nbsp;is&nbsp;JPEG&nbsp;and&nbsp;PNG.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+password&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;current&nbsp;password&nbsp;for&nbsp;the&nbsp;client's&nbsp;account.&nbsp;Not&nbsp;used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;bot&nbsp;accounts.<br>
+new_password&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;password&nbsp;you&nbsp;wish&nbsp;to&nbsp;change&nbsp;to.<br>
+email&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;email&nbsp;you&nbsp;wish&nbsp;to&nbsp;change&nbsp;to.<br>
+username&nbsp;:str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;username&nbsp;you&nbsp;wish&nbsp;to&nbsp;change&nbsp;to.<br>
+avatar&nbsp;:&nbsp;bytes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;*bytes-like&nbsp;object*&nbsp;representing&nbsp;the&nbsp;image&nbsp;to&nbsp;upload.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Could&nbsp;be&nbsp;``None``&nbsp;to&nbsp;denote&nbsp;no&nbsp;avatar.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Editing&nbsp;your&nbsp;profile&nbsp;failed.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Wrong&nbsp;image&nbsp;format&nbsp;passed&nbsp;for&nbsp;``avatar``.<br>
+ClientException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Password&nbsp;is&nbsp;required&nbsp;for&nbsp;non-bot&nbsp;accounts.</tt></dd></dl>
+
+<dl><dt><a name="Bot-edit_role"><strong>edit_role</strong></a>(self, server, role, **fields)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Edits&nbsp;the&nbsp;specified&nbsp;:class:`Role`&nbsp;for&nbsp;the&nbsp;entire&nbsp;:class:`Server`.<br>
+&nbsp;<br>
+The&nbsp;:class:`Role`&nbsp;object&nbsp;is&nbsp;not&nbsp;directly&nbsp;modified&nbsp;afterwards&nbsp;until&nbsp;the<br>
+corresponding&nbsp;WebSocket&nbsp;event&nbsp;is&nbsp;received.<br>
+&nbsp;<br>
+All&nbsp;fields&nbsp;except&nbsp;``server``&nbsp;and&nbsp;``role``&nbsp;are&nbsp;optional.&nbsp;To&nbsp;change<br>
+the&nbsp;position&nbsp;of&nbsp;a&nbsp;role,&nbsp;use&nbsp;:func:`move_role`&nbsp;instead.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.8.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Editing&nbsp;now&nbsp;uses&nbsp;keyword&nbsp;arguments&nbsp;instead&nbsp;of&nbsp;editing&nbsp;the&nbsp;:class:`Role`&nbsp;object&nbsp;directly.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;the&nbsp;role&nbsp;belongs&nbsp;to.<br>
+role&nbsp;:&nbsp;:class:`Role`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;role&nbsp;to&nbsp;edit.<br>
+name&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;role&nbsp;name&nbsp;to&nbsp;change&nbsp;to.<br>
+permissions&nbsp;:&nbsp;:class:`Permissions`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;permissions&nbsp;to&nbsp;change&nbsp;to.<br>
+colour&nbsp;:&nbsp;:class:`Colour`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;colour&nbsp;to&nbsp;change&nbsp;to.&nbsp;(aliased&nbsp;to&nbsp;color&nbsp;as&nbsp;well)<br>
+hoist&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Indicates&nbsp;if&nbsp;the&nbsp;role&nbsp;should&nbsp;be&nbsp;shown&nbsp;separately&nbsp;in&nbsp;the&nbsp;online&nbsp;list.<br>
+mentionable&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Indicates&nbsp;if&nbsp;the&nbsp;role&nbsp;should&nbsp;be&nbsp;mentionable&nbsp;by&nbsp;others.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;change&nbsp;the&nbsp;role.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Editing&nbsp;the&nbsp;role&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-edit_server"><strong>edit_server</strong></a>(self, server, **fields)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Edits&nbsp;a&nbsp;:class:`Server`.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;edit&nbsp;the&nbsp;server.<br>
+&nbsp;<br>
+The&nbsp;:class:`Server`&nbsp;object&nbsp;is&nbsp;not&nbsp;directly&nbsp;modified&nbsp;afterwards&nbsp;until&nbsp;the<br>
+corresponding&nbsp;WebSocket&nbsp;event&nbsp;is&nbsp;received.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+server:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;edit.<br>
+name:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;name&nbsp;of&nbsp;the&nbsp;server.<br>
+icon:&nbsp;bytes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;*bytes-like*&nbsp;object&nbsp;representing&nbsp;the&nbsp;icon.&nbsp;See&nbsp;:meth:`edit_profile`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;more&nbsp;details.&nbsp;Could&nbsp;be&nbsp;``None``&nbsp;to&nbsp;denote&nbsp;no&nbsp;icon.<br>
+splash:&nbsp;bytes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;*bytes-like*&nbsp;object&nbsp;representing&nbsp;the&nbsp;invite&nbsp;splash.&nbsp;See<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:meth:`edit_profile`&nbsp;for&nbsp;more&nbsp;details.&nbsp;Could&nbsp;be&nbsp;``None``&nbsp;to&nbsp;denote<br>
+&nbsp;&nbsp;&nbsp;&nbsp;no&nbsp;invite&nbsp;splash.&nbsp;Only&nbsp;available&nbsp;for&nbsp;partnered&nbsp;servers&nbsp;with<br>
+&nbsp;&nbsp;&nbsp;&nbsp;``INVITE_SPLASH``&nbsp;feature.<br>
+region:&nbsp;:class:`ServerRegion`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;region&nbsp;for&nbsp;the&nbsp;server's&nbsp;voice&nbsp;communication.<br>
+afk_channel:&nbsp;:class:`Channel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;channel&nbsp;that&nbsp;is&nbsp;the&nbsp;AFK&nbsp;channel.&nbsp;Could&nbsp;be&nbsp;``None``&nbsp;for&nbsp;no&nbsp;AFK&nbsp;channel.<br>
+afk_timeout:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;seconds&nbsp;until&nbsp;someone&nbsp;is&nbsp;moved&nbsp;to&nbsp;the&nbsp;AFK&nbsp;channel.<br>
+owner:&nbsp;:class:`Member`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;owner&nbsp;of&nbsp;the&nbsp;server&nbsp;to&nbsp;transfer&nbsp;ownership&nbsp;to.&nbsp;Note&nbsp;that&nbsp;you&nbsp;must<br>
+&nbsp;&nbsp;&nbsp;&nbsp;be&nbsp;owner&nbsp;of&nbsp;the&nbsp;server&nbsp;to&nbsp;do&nbsp;this.<br>
+verification_level:&nbsp;:class:`VerificationLevel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;new&nbsp;verification&nbsp;level&nbsp;for&nbsp;the&nbsp;server.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;edit&nbsp;the&nbsp;server.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;you&nbsp;are&nbsp;trying&nbsp;to&nbsp;edit&nbsp;does&nbsp;not&nbsp;exist.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Editing&nbsp;the&nbsp;server&nbsp;failed.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;image&nbsp;format&nbsp;passed&nbsp;in&nbsp;to&nbsp;``icon``&nbsp;is&nbsp;invalid.&nbsp;It&nbsp;must&nbsp;be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PNG&nbsp;or&nbsp;JPG.&nbsp;This&nbsp;is&nbsp;also&nbsp;raised&nbsp;if&nbsp;you&nbsp;are&nbsp;not&nbsp;the&nbsp;owner&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;server&nbsp;and&nbsp;request&nbsp;an&nbsp;ownership&nbsp;transfer.</tt></dd></dl>
+
+<dl><dt><a name="Bot-estimate_pruned_members"><strong>estimate_pruned_members</strong></a>(self, server, *, days)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Similar&nbsp;to&nbsp;:meth:`prune_members`&nbsp;except&nbsp;instead&nbsp;of&nbsp;actually<br>
+pruning&nbsp;members,&nbsp;it&nbsp;returns&nbsp;how&nbsp;many&nbsp;members&nbsp;it&nbsp;would&nbsp;prune<br>
+from&nbsp;the&nbsp;server&nbsp;had&nbsp;it&nbsp;been&nbsp;called.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;estimate&nbsp;a&nbsp;prune&nbsp;from.<br>
+days:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;days&nbsp;before&nbsp;counting&nbsp;as&nbsp;inactive.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;prune&nbsp;members.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;error&nbsp;occurred&nbsp;while&nbsp;fetching&nbsp;the&nbsp;prune&nbsp;members&nbsp;estimate.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;integer&nbsp;was&nbsp;not&nbsp;passed&nbsp;for&nbsp;``days``.<br>
+&nbsp;<br>
+Returns<br>
+---------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;members&nbsp;estimated&nbsp;to&nbsp;be&nbsp;pruned.</tt></dd></dl>
+
+<dl><dt><a name="Bot-event"><strong>event</strong></a>(self, coro)</dt><dd><tt>A&nbsp;decorator&nbsp;that&nbsp;registers&nbsp;an&nbsp;event&nbsp;to&nbsp;listen&nbsp;to.<br>
+&nbsp;<br>
+You&nbsp;can&nbsp;find&nbsp;more&nbsp;info&nbsp;about&nbsp;the&nbsp;events&nbsp;on&nbsp;the&nbsp;:ref:`documentation&nbsp;below&nbsp;&lt;discord-api-events&gt;`.<br>
+&nbsp;<br>
+The&nbsp;events&nbsp;must&nbsp;be&nbsp;a&nbsp;|corourl|_,&nbsp;if&nbsp;not,&nbsp;:exc:`ClientException`&nbsp;is&nbsp;raised.<br>
+&nbsp;<br>
+Examples<br>
+---------<br>
+&nbsp;<br>
+Using&nbsp;the&nbsp;basic&nbsp;:meth:`event`&nbsp;decorator:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;@client.event<br>
+&nbsp;&nbsp;&nbsp;&nbsp;@asyncio.coroutine<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;<a href="#Bot-on_ready">on_ready</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('Ready!')<br>
+&nbsp;<br>
+Saving&nbsp;characters&nbsp;by&nbsp;using&nbsp;the&nbsp;:meth:`async_event`&nbsp;decorator:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;@client.async_event<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;<a href="#Bot-on_ready">on_ready</a>():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('Ready!')</tt></dd></dl>
+
+<dl><dt><a name="Bot-get_all_channels"><strong>get_all_channels</strong></a>(self)</dt><dd><tt>A&nbsp;generator&nbsp;that&nbsp;retrieves&nbsp;every&nbsp;:class:`Channel`&nbsp;the&nbsp;client&nbsp;can&nbsp;'access'.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;server&nbsp;in&nbsp;client.servers:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;channel&nbsp;in&nbsp;server.channels:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield&nbsp;channel<br>
+&nbsp;<br>
+Note<br>
+-----<br>
+Just&nbsp;because&nbsp;you&nbsp;receive&nbsp;a&nbsp;:class:`Channel`&nbsp;does&nbsp;not&nbsp;mean&nbsp;that<br>
+you&nbsp;can&nbsp;communicate&nbsp;in&nbsp;said&nbsp;channel.&nbsp;:meth:`Channel.permissions_for`&nbsp;should<br>
+be&nbsp;used&nbsp;for&nbsp;that.</tt></dd></dl>
+
+<dl><dt><a name="Bot-get_all_emojis"><strong>get_all_emojis</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;generator&nbsp;with&nbsp;every&nbsp;:class:`Emoji`&nbsp;the&nbsp;client&nbsp;can&nbsp;see.</tt></dd></dl>
+
+<dl><dt><a name="Bot-get_all_members"><strong>get_all_members</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;generator&nbsp;with&nbsp;every&nbsp;:class:`Member`&nbsp;the&nbsp;client&nbsp;can&nbsp;see.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;equivalent&nbsp;to:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;server&nbsp;in&nbsp;client.servers:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;member&nbsp;in&nbsp;server.members:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield&nbsp;member</tt></dd></dl>
+
+<dl><dt><a name="Bot-get_bans"><strong>get_bans</strong></a>(self, server)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Retrieves&nbsp;all&nbsp;the&nbsp;:class:`User`&nbsp;s&nbsp;that&nbsp;are&nbsp;banned&nbsp;from&nbsp;the&nbsp;specified<br>
+server.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;get&nbsp;this&nbsp;information.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;get&nbsp;ban&nbsp;information&nbsp;from.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;get&nbsp;the&nbsp;information.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;error&nbsp;occurred&nbsp;while&nbsp;fetching&nbsp;the&nbsp;information.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;list&nbsp;of&nbsp;:class:`User`&nbsp;that&nbsp;have&nbsp;been&nbsp;banned.</tt></dd></dl>
+
+<dl><dt><a name="Bot-get_channel"><strong>get_channel</strong></a>(self, id)</dt><dd><tt>Returns&nbsp;a&nbsp;:class:`Channel`&nbsp;or&nbsp;:class:`PrivateChannel`&nbsp;with&nbsp;the&nbsp;following&nbsp;ID.&nbsp;If&nbsp;not&nbsp;found,&nbsp;returns&nbsp;None.</tt></dd></dl>
+
+<dl><dt><a name="Bot-get_invite"><strong>get_invite</strong></a>(self, url)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Gets&nbsp;a&nbsp;:class:`Invite`&nbsp;from&nbsp;a&nbsp;discord.gg&nbsp;URL&nbsp;or&nbsp;ID.<br>
+&nbsp;<br>
+Note<br>
+------<br>
+If&nbsp;the&nbsp;invite&nbsp;is&nbsp;for&nbsp;a&nbsp;server&nbsp;you&nbsp;have&nbsp;not&nbsp;joined,&nbsp;the&nbsp;server&nbsp;and&nbsp;channel<br>
+attributes&nbsp;of&nbsp;the&nbsp;returned&nbsp;invite&nbsp;will&nbsp;be&nbsp;:class:`Object`&nbsp;with&nbsp;the&nbsp;names<br>
+patched&nbsp;in.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+url&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;discord&nbsp;invite&nbsp;ID&nbsp;or&nbsp;URL&nbsp;(must&nbsp;be&nbsp;a&nbsp;discord.gg&nbsp;URL).<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;invite&nbsp;has&nbsp;expired&nbsp;or&nbsp;is&nbsp;invalid.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Getting&nbsp;the&nbsp;invite&nbsp;failed.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`Invite`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;invite&nbsp;from&nbsp;the&nbsp;URL/ID.</tt></dd></dl>
+
+<dl><dt><a name="Bot-get_message"><strong>get_message</strong></a>(self, channel, id)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Retrieves&nbsp;a&nbsp;single&nbsp;:class:`Message`&nbsp;from&nbsp;a&nbsp;:class:`Channel`.<br>
+&nbsp;<br>
+This&nbsp;can&nbsp;only&nbsp;be&nbsp;used&nbsp;by&nbsp;bot&nbsp;accounts.<br>
+&nbsp;<br>
+Parameters<br>
+------------<br>
+channel:&nbsp;:class:`Channel`&nbsp;or&nbsp;:class:`PrivateChannel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;text&nbsp;channel&nbsp;to&nbsp;retrieve&nbsp;the&nbsp;message&nbsp;from.<br>
+id:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;ID&nbsp;to&nbsp;look&nbsp;for.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;asked&nbsp;for.<br>
+&nbsp;<br>
+Raises<br>
+--------<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;specified&nbsp;channel&nbsp;or&nbsp;message&nbsp;was&nbsp;not&nbsp;found.<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;the&nbsp;permissions&nbsp;required&nbsp;to&nbsp;get&nbsp;a&nbsp;message.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Retrieving&nbsp;the&nbsp;message&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-get_reaction_users"><strong>get_reaction_users</strong></a>(self, reaction, limit=100, after=None)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Get&nbsp;the&nbsp;users&nbsp;that&nbsp;added&nbsp;a&nbsp;reaction&nbsp;to&nbsp;a&nbsp;message.<br>
+&nbsp;<br>
+Parameters<br>
+------------<br>
+reaction&nbsp;:&nbsp;:class:`Reaction`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;reaction&nbsp;to&nbsp;retrieve&nbsp;users&nbsp;for.<br>
+limit&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;maximum&nbsp;number&nbsp;of&nbsp;results&nbsp;to&nbsp;return.<br>
+after&nbsp;:&nbsp;:class:`Member`&nbsp;or&nbsp;:class:`Object`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;For&nbsp;pagination,&nbsp;reactions&nbsp;are&nbsp;sorted&nbsp;by&nbsp;member.<br>
+&nbsp;<br>
+Raises<br>
+--------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Getting&nbsp;the&nbsp;users&nbsp;for&nbsp;the&nbsp;reaction&nbsp;failed.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;emoji&nbsp;you&nbsp;specified&nbsp;was&nbsp;not&nbsp;found.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;reaction&nbsp;parameter&nbsp;is&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Bot-get_server"><strong>get_server</strong></a>(self, id)</dt><dd><tt>Returns&nbsp;a&nbsp;:class:`Server`&nbsp;with&nbsp;the&nbsp;given&nbsp;ID.&nbsp;If&nbsp;not&nbsp;found,&nbsp;returns&nbsp;None.</tt></dd></dl>
+
+<dl><dt><a name="Bot-get_user_info"><strong>get_user_info</strong></a>(self, user_id)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Retrieves&nbsp;a&nbsp;:class:`User`&nbsp;based&nbsp;on&nbsp;their&nbsp;ID.&nbsp;This&nbsp;can&nbsp;only<br>
+be&nbsp;used&nbsp;by&nbsp;bot&nbsp;accounts.&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;to&nbsp;share&nbsp;any&nbsp;servers<br>
+with&nbsp;the&nbsp;user&nbsp;to&nbsp;get&nbsp;this&nbsp;information,&nbsp;however&nbsp;many&nbsp;operations<br>
+do&nbsp;require&nbsp;that&nbsp;you&nbsp;do.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+user_id:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;user's&nbsp;ID&nbsp;to&nbsp;fetch&nbsp;from.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`User`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;user&nbsp;you&nbsp;requested.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;user&nbsp;with&nbsp;this&nbsp;ID&nbsp;does&nbsp;not&nbsp;exist.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Fetching&nbsp;the&nbsp;user&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-group_call_in"><strong>group_call_in</strong></a>(self, channel)</dt><dd><tt>Returns&nbsp;the&nbsp;:class:`GroupCall`&nbsp;associated&nbsp;with&nbsp;a&nbsp;private&nbsp;channel.<br>
+&nbsp;<br>
+If&nbsp;no&nbsp;group&nbsp;call&nbsp;is&nbsp;found&nbsp;then&nbsp;``None``&nbsp;is&nbsp;returned.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+channel:&nbsp;:class:`PrivateChannel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;group&nbsp;private&nbsp;channel&nbsp;to&nbsp;query&nbsp;the&nbsp;group&nbsp;call&nbsp;for.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+Optional[:class:`GroupCall`]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;group&nbsp;call.</tt></dd></dl>
+
+<dl><dt><a name="Bot-handle_message"><strong>handle_message</strong></a>(self, message)</dt></dl>
+
+<dl><dt><a name="Bot-handle_reaction_add"><strong>handle_reaction_add</strong></a>(self, reaction, user)</dt></dl>
+
+<dl><dt><a name="Bot-handle_ready"><strong>handle_ready</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Bot-invites_from"><strong>invites_from</strong></a>(self, server)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;active&nbsp;instant&nbsp;invites&nbsp;from&nbsp;a&nbsp;:class:`Server`.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;get&nbsp;this&nbsp;information.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;get&nbsp;invites&nbsp;from.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;get&nbsp;the&nbsp;information.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;error&nbsp;occurred&nbsp;while&nbsp;fetching&nbsp;the&nbsp;information.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+list&nbsp;of&nbsp;:class:`Invite`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;list&nbsp;of&nbsp;invites&nbsp;that&nbsp;are&nbsp;currently&nbsp;active.</tt></dd></dl>
+
+<dl><dt><a name="Bot-is_voice_connected"><strong>is_voice_connected</strong></a>(self, server)</dt><dd><tt>Indicates&nbsp;if&nbsp;we&nbsp;are&nbsp;currently&nbsp;connected&nbsp;to&nbsp;a&nbsp;voice&nbsp;channel&nbsp;in&nbsp;the<br>
+specified&nbsp;server.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;query&nbsp;if&nbsp;we're&nbsp;connected&nbsp;to&nbsp;it.</tt></dd></dl>
+
+<dl><dt><a name="Bot-join_voice_channel"><strong>join_voice_channel</strong></a>(self, channel)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Joins&nbsp;a&nbsp;voice&nbsp;channel&nbsp;and&nbsp;creates&nbsp;a&nbsp;:class:`VoiceClient`&nbsp;to<br>
+establish&nbsp;your&nbsp;connection&nbsp;to&nbsp;the&nbsp;voice&nbsp;server.<br>
+&nbsp;<br>
+After&nbsp;this&nbsp;function&nbsp;is&nbsp;successfully&nbsp;called,&nbsp;:attr:`voice`&nbsp;is<br>
+set&nbsp;to&nbsp;the&nbsp;returned&nbsp;:class:`VoiceClient`.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+channel&nbsp;:&nbsp;:class:`Channel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;voice&nbsp;channel&nbsp;to&nbsp;join&nbsp;to.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;was&nbsp;not&nbsp;a&nbsp;voice&nbsp;channel.<br>
+asyncio.TimeoutError<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Could&nbsp;not&nbsp;connect&nbsp;to&nbsp;the&nbsp;voice&nbsp;channel&nbsp;in&nbsp;time.<br>
+ClientException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;are&nbsp;already&nbsp;connected&nbsp;to&nbsp;a&nbsp;voice&nbsp;channel.<br>
+OpusNotLoaded<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;opus&nbsp;library&nbsp;has&nbsp;not&nbsp;been&nbsp;loaded.<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+:class:`VoiceClient`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;voice&nbsp;client&nbsp;that&nbsp;is&nbsp;fully&nbsp;connected&nbsp;to&nbsp;the&nbsp;voice&nbsp;server.</tt></dd></dl>
+
+<dl><dt><a name="Bot-kick"><strong>kick</strong></a>(self, member)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Kicks&nbsp;a&nbsp;:class:`Member`&nbsp;from&nbsp;the&nbsp;server&nbsp;they&nbsp;belong&nbsp;to.<br>
+&nbsp;<br>
+Warning<br>
+--------<br>
+This&nbsp;function&nbsp;kicks&nbsp;the&nbsp;:class:`Member`&nbsp;based&nbsp;on&nbsp;the&nbsp;server&nbsp;it<br>
+belongs&nbsp;to,&nbsp;which&nbsp;is&nbsp;accessed&nbsp;via&nbsp;:attr:`Member.server`.&nbsp;So&nbsp;you<br>
+must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;in&nbsp;that&nbsp;server.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+member&nbsp;:&nbsp;:class:`Member`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;member&nbsp;to&nbsp;kick&nbsp;from&nbsp;their&nbsp;server.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;kick.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Kicking&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-leave_server"><strong>leave_server</strong></a>(self, server)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Leaves&nbsp;a&nbsp;:class:`Server`.<br>
+&nbsp;<br>
+Note<br>
+--------<br>
+You&nbsp;cannot&nbsp;leave&nbsp;the&nbsp;server&nbsp;that&nbsp;you&nbsp;own,&nbsp;you&nbsp;must&nbsp;delete&nbsp;it&nbsp;instead<br>
+via&nbsp;:meth:`delete_server`.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;leave.<br>
+&nbsp;<br>
+Raises<br>
+--------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;leaving&nbsp;the&nbsp;server&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-login"><strong>login</strong></a>(self, *args, **kwargs)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Logs&nbsp;in&nbsp;the&nbsp;client&nbsp;with&nbsp;the&nbsp;specified&nbsp;credentials.<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;can&nbsp;be&nbsp;used&nbsp;in&nbsp;two&nbsp;different&nbsp;ways.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-login">login</a>('token')<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;or<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-login">login</a>('email',&nbsp;'password')<br>
+&nbsp;<br>
+More&nbsp;than&nbsp;2&nbsp;parameters&nbsp;or&nbsp;less&nbsp;than&nbsp;1&nbsp;parameter&nbsp;raises&nbsp;a<br>
+:exc:`TypeError`.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+bot&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keyword&nbsp;argument&nbsp;that&nbsp;specifies&nbsp;if&nbsp;the&nbsp;account&nbsp;logging&nbsp;on&nbsp;is&nbsp;a&nbsp;bot<br>
+&nbsp;&nbsp;&nbsp;&nbsp;token&nbsp;or&nbsp;not.&nbsp;Only&nbsp;useful&nbsp;for&nbsp;logging&nbsp;in&nbsp;with&nbsp;a&nbsp;static&nbsp;token.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Ignored&nbsp;for&nbsp;the&nbsp;email&nbsp;and&nbsp;password&nbsp;combo.&nbsp;Defaults&nbsp;to&nbsp;``True``.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+LoginFailure<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;wrong&nbsp;credentials&nbsp;are&nbsp;passed.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;unknown&nbsp;HTTP&nbsp;related&nbsp;error&nbsp;occurred,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;usually&nbsp;when&nbsp;it&nbsp;isn't&nbsp;200&nbsp;or&nbsp;the&nbsp;known&nbsp;incorrect&nbsp;credentials<br>
+&nbsp;&nbsp;&nbsp;&nbsp;passing&nbsp;status&nbsp;code.<br>
+TypeError<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;incorrect&nbsp;number&nbsp;of&nbsp;parameters&nbsp;is&nbsp;passed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-logout"><strong>logout</strong></a>(self)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Logs&nbsp;out&nbsp;of&nbsp;Discord&nbsp;and&nbsp;closes&nbsp;all&nbsp;connections.</tt></dd></dl>
+
+<dl><dt><a name="Bot-logs_from"><strong>logs_from</strong></a>(self, channel, limit=100, *, before=None, after=None, around=None, reverse=False)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+This&nbsp;coroutine&nbsp;returns&nbsp;a&nbsp;generator&nbsp;that&nbsp;obtains&nbsp;logs&nbsp;from&nbsp;a&nbsp;specified&nbsp;channel.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+channel&nbsp;:&nbsp;:class:`Channel`&nbsp;or&nbsp;:class:`PrivateChannel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;to&nbsp;obtain&nbsp;the&nbsp;logs&nbsp;from.<br>
+limit&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;messages&nbsp;to&nbsp;retrieve.<br>
+before&nbsp;:&nbsp;:class:`Message`&nbsp;or&nbsp;`datetime`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;date&nbsp;before&nbsp;which&nbsp;all&nbsp;returned&nbsp;messages&nbsp;must&nbsp;be.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;a&nbsp;date&nbsp;is&nbsp;provided&nbsp;it&nbsp;must&nbsp;be&nbsp;a&nbsp;timezone-naive&nbsp;datetime&nbsp;representing&nbsp;UTC&nbsp;time.<br>
+after&nbsp;:&nbsp;:class:`Message`&nbsp;or&nbsp;`datetime`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;date&nbsp;after&nbsp;which&nbsp;all&nbsp;returned&nbsp;messages&nbsp;must&nbsp;be.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;a&nbsp;date&nbsp;is&nbsp;provided&nbsp;it&nbsp;must&nbsp;be&nbsp;a&nbsp;timezone-naive&nbsp;datetime&nbsp;representing&nbsp;UTC&nbsp;time.<br>
+around&nbsp;:&nbsp;:class:`Message`&nbsp;or&nbsp;`datetime`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;date&nbsp;around&nbsp;which&nbsp;all&nbsp;returned&nbsp;messages&nbsp;must&nbsp;be.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;a&nbsp;date&nbsp;is&nbsp;provided&nbsp;it&nbsp;must&nbsp;be&nbsp;a&nbsp;timezone-naive&nbsp;datetime&nbsp;representing&nbsp;UTC&nbsp;time.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;get&nbsp;channel&nbsp;logs.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;you&nbsp;are&nbsp;requesting&nbsp;for&nbsp;doesn't&nbsp;exist.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;request&nbsp;to&nbsp;get&nbsp;logs&nbsp;failed.<br>
+&nbsp;<br>
+Yields<br>
+-------<br>
+:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;with&nbsp;the&nbsp;message&nbsp;data&nbsp;parsed.<br>
+&nbsp;<br>
+Examples<br>
+---------<br>
+&nbsp;<br>
+Basic&nbsp;logging:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;logs&nbsp;=&nbsp;yield&nbsp;from&nbsp;client.<a href="#Bot-logs_from">logs_from</a>(channel)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;message&nbsp;in&nbsp;logs:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;message.content.startswith('!hello'):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;message.author&nbsp;==&nbsp;client.user:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield&nbsp;from&nbsp;client.<a href="#Bot-edit_message">edit_message</a>(message,&nbsp;'goodbye')<br>
+&nbsp;<br>
+Python&nbsp;3.5&nbsp;Usage&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;counter&nbsp;=&nbsp;0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;for&nbsp;message&nbsp;in&nbsp;client.<a href="#Bot-logs_from">logs_from</a>(channel,&nbsp;limit=500):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;message.author&nbsp;==&nbsp;client.user:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter&nbsp;+=&nbsp;1</tt></dd></dl>
+
+<dl><dt><a name="Bot-move_channel"><strong>move_channel</strong></a>(self, channel, position)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Moves&nbsp;the&nbsp;specified&nbsp;:class:`Channel`&nbsp;to&nbsp;the&nbsp;given&nbsp;position&nbsp;in&nbsp;the&nbsp;GUI.<br>
+Note&nbsp;that&nbsp;voice&nbsp;channels&nbsp;and&nbsp;text&nbsp;channels&nbsp;have&nbsp;different&nbsp;position&nbsp;values.<br>
+&nbsp;<br>
+The&nbsp;:class:`Channel`&nbsp;object&nbsp;is&nbsp;not&nbsp;directly&nbsp;modified&nbsp;afterwards&nbsp;until&nbsp;the<br>
+corresponding&nbsp;WebSocket&nbsp;event&nbsp;is&nbsp;received.<br>
+&nbsp;<br>
+..&nbsp;warning::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:class:`Object`&nbsp;instances&nbsp;do&nbsp;not&nbsp;work&nbsp;with&nbsp;this&nbsp;function.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+channel&nbsp;:&nbsp;:class:`Channel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;to&nbsp;change&nbsp;positions&nbsp;of.<br>
+position&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;position&nbsp;to&nbsp;insert&nbsp;the&nbsp;channel&nbsp;to.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;position&nbsp;is&nbsp;less&nbsp;than&nbsp;0&nbsp;or&nbsp;greater&nbsp;than&nbsp;the&nbsp;number&nbsp;of&nbsp;channels.<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;change&nbsp;channel&nbsp;order.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;moving&nbsp;the&nbsp;channel&nbsp;failed,&nbsp;or&nbsp;you&nbsp;are&nbsp;of&nbsp;too&nbsp;low&nbsp;rank&nbsp;to&nbsp;move&nbsp;the&nbsp;channel.</tt></dd></dl>
+
+<dl><dt><a name="Bot-move_member"><strong>move_member</strong></a>(self, member, channel)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Moves&nbsp;a&nbsp;:class:`Member`&nbsp;to&nbsp;a&nbsp;different&nbsp;voice&nbsp;channel.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;do&nbsp;this.<br>
+&nbsp;<br>
+Note<br>
+-----<br>
+You&nbsp;cannot&nbsp;pass&nbsp;in&nbsp;a&nbsp;:class:`Object`&nbsp;instead&nbsp;of&nbsp;a&nbsp;:class:`Channel`<br>
+object&nbsp;in&nbsp;this&nbsp;function.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+member&nbsp;:&nbsp;:class:`Member`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;member&nbsp;to&nbsp;move&nbsp;to&nbsp;another&nbsp;voice&nbsp;channel.<br>
+channel&nbsp;:&nbsp;:class:`Channel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;voice&nbsp;channel&nbsp;to&nbsp;move&nbsp;the&nbsp;member&nbsp;to.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;provided&nbsp;is&nbsp;not&nbsp;a&nbsp;voice&nbsp;channel.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Moving&nbsp;the&nbsp;member&nbsp;failed.<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;move&nbsp;the&nbsp;member.</tt></dd></dl>
+
+<dl><dt><a name="Bot-move_role"><strong>move_role</strong></a>(self, server, role, position)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Moves&nbsp;the&nbsp;specified&nbsp;:class:`Role`&nbsp;to&nbsp;the&nbsp;given&nbsp;position&nbsp;in&nbsp;the&nbsp;:class:`Server`.<br>
+&nbsp;<br>
+The&nbsp;:class:`Role`&nbsp;object&nbsp;is&nbsp;not&nbsp;directly&nbsp;modified&nbsp;afterwards&nbsp;until&nbsp;the<br>
+corresponding&nbsp;WebSocket&nbsp;event&nbsp;is&nbsp;received.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;the&nbsp;role&nbsp;belongs&nbsp;to.<br>
+role&nbsp;:&nbsp;:class:`Role`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;role&nbsp;to&nbsp;edit.<br>
+position&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;position&nbsp;to&nbsp;insert&nbsp;the&nbsp;role&nbsp;to.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;position&nbsp;is&nbsp;0,&nbsp;or&nbsp;role&nbsp;is&nbsp;server.default_role<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;change&nbsp;role&nbsp;order.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;moving&nbsp;the&nbsp;role&nbsp;failed,&nbsp;or&nbsp;you&nbsp;are&nbsp;of&nbsp;too&nbsp;low&nbsp;rank&nbsp;to&nbsp;move&nbsp;the&nbsp;role.</tt></dd></dl>
+
+<dl><dt><a name="Bot-on_error"><strong>on_error</strong></a>(self, event_method, *args, **kwargs)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;error&nbsp;handler&nbsp;provided&nbsp;by&nbsp;the&nbsp;client.<br>
+&nbsp;<br>
+By&nbsp;default&nbsp;this&nbsp;prints&nbsp;to&nbsp;``sys.stderr``&nbsp;however&nbsp;it&nbsp;could&nbsp;be<br>
+overridden&nbsp;to&nbsp;have&nbsp;a&nbsp;different&nbsp;implementation.<br>
+Check&nbsp;:func:`discord.on_error`&nbsp;for&nbsp;more&nbsp;details.</tt></dd></dl>
+
+<dl><dt><a name="Bot-pin_message"><strong>pin_message</strong></a>(self, message)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Pins&nbsp;a&nbsp;message.&nbsp;You&nbsp;must&nbsp;have&nbsp;Manage&nbsp;Messages&nbsp;permissions<br>
+to&nbsp;do&nbsp;this&nbsp;in&nbsp;a&nbsp;non-private&nbsp;channel&nbsp;context.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+message:&nbsp;:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;to&nbsp;pin.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;pin&nbsp;the&nbsp;message.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;channel&nbsp;was&nbsp;not&nbsp;found.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Pinning&nbsp;the&nbsp;message&nbsp;failed,&nbsp;probably&nbsp;due&nbsp;to&nbsp;the&nbsp;channel<br>
+&nbsp;&nbsp;&nbsp;&nbsp;having&nbsp;more&nbsp;than&nbsp;50&nbsp;pinned&nbsp;messages.</tt></dd></dl>
+
+<dl><dt><a name="Bot-pins_from"><strong>pins_from</strong></a>(self, channel)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;:class:`Message`&nbsp;that&nbsp;are&nbsp;currently&nbsp;pinned&nbsp;for<br>
+the&nbsp;specified&nbsp;:class:`Channel`&nbsp;or&nbsp;:class:`PrivateChannel`.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+channel:&nbsp;:class:`Channel`&nbsp;or&nbsp;:class:`PrivateChannel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;to&nbsp;look&nbsp;through&nbsp;pins&nbsp;for.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;was&nbsp;not&nbsp;found.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Retrieving&nbsp;the&nbsp;pinned&nbsp;messages&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-prune_members"><strong>prune_members</strong></a>(self, server, *, days)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Prunes&nbsp;a&nbsp;:class:`Server`&nbsp;from&nbsp;its&nbsp;inactive&nbsp;members.<br>
+&nbsp;<br>
+The&nbsp;inactive&nbsp;members&nbsp;are&nbsp;denoted&nbsp;if&nbsp;they&nbsp;have&nbsp;not&nbsp;logged&nbsp;on&nbsp;in<br>
+``days``&nbsp;number&nbsp;of&nbsp;days&nbsp;and&nbsp;they&nbsp;have&nbsp;no&nbsp;roles.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;the&nbsp;"Kick&nbsp;Members"&nbsp;permission&nbsp;to&nbsp;use&nbsp;this.<br>
+&nbsp;<br>
+To&nbsp;check&nbsp;how&nbsp;many&nbsp;members&nbsp;you&nbsp;would&nbsp;prune&nbsp;without&nbsp;actually&nbsp;pruning,<br>
+see&nbsp;the&nbsp;:meth:`estimate_pruned_members`&nbsp;function.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;prune&nbsp;from.<br>
+days:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;days&nbsp;before&nbsp;counting&nbsp;as&nbsp;inactive.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;prune&nbsp;members.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;error&nbsp;occurred&nbsp;while&nbsp;pruning&nbsp;members.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;integer&nbsp;was&nbsp;not&nbsp;passed&nbsp;for&nbsp;``days``.<br>
+&nbsp;<br>
+Returns<br>
+---------<br>
+int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;members&nbsp;pruned.</tt></dd></dl>
+
+<dl><dt><a name="Bot-purge_from"><strong>purge_from</strong></a>(self, channel, *, limit=100, check=None, before=None, after=None, around=None)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Purges&nbsp;a&nbsp;list&nbsp;of&nbsp;messages&nbsp;that&nbsp;meet&nbsp;the&nbsp;criteria&nbsp;given&nbsp;by&nbsp;the&nbsp;predicate<br>
+``check``.&nbsp;If&nbsp;a&nbsp;``check``&nbsp;is&nbsp;not&nbsp;provided&nbsp;then&nbsp;all&nbsp;messages&nbsp;are&nbsp;deleted<br>
+without&nbsp;discrimination.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;Manage&nbsp;Messages&nbsp;permission&nbsp;to&nbsp;delete&nbsp;messages&nbsp;even&nbsp;if&nbsp;they<br>
+are&nbsp;your&nbsp;own.&nbsp;The&nbsp;Read&nbsp;Message&nbsp;History&nbsp;permission&nbsp;is&nbsp;also&nbsp;needed&nbsp;to<br>
+retrieve&nbsp;message&nbsp;history.<br>
+&nbsp;<br>
+Usable&nbsp;only&nbsp;by&nbsp;bot&nbsp;accounts.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+channel&nbsp;:&nbsp;:class:`Channel`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;to&nbsp;purge&nbsp;from.<br>
+limit&nbsp;:&nbsp;int<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;messages&nbsp;to&nbsp;search&nbsp;through.&nbsp;This&nbsp;is&nbsp;not&nbsp;the&nbsp;number<br>
+&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;messages&nbsp;that&nbsp;will&nbsp;be&nbsp;deleted,&nbsp;though&nbsp;it&nbsp;can&nbsp;be.<br>
+check&nbsp;:&nbsp;predicate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;function&nbsp;used&nbsp;to&nbsp;check&nbsp;if&nbsp;a&nbsp;message&nbsp;should&nbsp;be&nbsp;deleted.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;It&nbsp;must&nbsp;take&nbsp;a&nbsp;:class:`Message`&nbsp;as&nbsp;its&nbsp;sole&nbsp;parameter.<br>
+before&nbsp;:&nbsp;:class:`Message`&nbsp;or&nbsp;`datetime`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;date&nbsp;before&nbsp;which&nbsp;all&nbsp;deleted&nbsp;messages&nbsp;must&nbsp;be.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;a&nbsp;date&nbsp;is&nbsp;provided&nbsp;it&nbsp;must&nbsp;be&nbsp;a&nbsp;timezone-naive&nbsp;datetime&nbsp;representing&nbsp;UTC&nbsp;time.<br>
+after&nbsp;:&nbsp;:class:`Message`&nbsp;or&nbsp;`datetime`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;date&nbsp;after&nbsp;which&nbsp;all&nbsp;deleted&nbsp;messages&nbsp;must&nbsp;be.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;a&nbsp;date&nbsp;is&nbsp;provided&nbsp;it&nbsp;must&nbsp;be&nbsp;a&nbsp;timezone-naive&nbsp;datetime&nbsp;representing&nbsp;UTC&nbsp;time.<br>
+around&nbsp;:&nbsp;:class:`Message`&nbsp;or&nbsp;`datetime`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;date&nbsp;around&nbsp;which&nbsp;all&nbsp;deleted&nbsp;messages&nbsp;must&nbsp;be.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;a&nbsp;date&nbsp;is&nbsp;provided&nbsp;it&nbsp;must&nbsp;be&nbsp;a&nbsp;timezone-naive&nbsp;datetime&nbsp;representing&nbsp;UTC&nbsp;time.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;do&nbsp;the&nbsp;actions&nbsp;required&nbsp;or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;you're&nbsp;not&nbsp;using&nbsp;a&nbsp;bot&nbsp;account.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Purging&nbsp;the&nbsp;messages&nbsp;failed.<br>
+&nbsp;<br>
+Examples<br>
+---------<br>
+&nbsp;<br>
+Deleting&nbsp;bot's&nbsp;messages&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;is_me(m):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;m.author&nbsp;==&nbsp;client.user<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;deleted&nbsp;=&nbsp;await&nbsp;client.<a href="#Bot-purge_from">purge_from</a>(channel,&nbsp;limit=100,&nbsp;check=is_me)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(channel,&nbsp;'Deleted&nbsp;{}&nbsp;message(s)'.format(len(deleted)))<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+list<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;list&nbsp;of&nbsp;messages&nbsp;that&nbsp;were&nbsp;deleted.</tt></dd></dl>
+
+<dl><dt><a name="Bot-remove_reaction"><strong>remove_reaction</strong></a>(self, message, emoji, member)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Remove&nbsp;a&nbsp;reaction&nbsp;by&nbsp;the&nbsp;member&nbsp;from&nbsp;the&nbsp;given&nbsp;message.<br>
+&nbsp;<br>
+If&nbsp;member&nbsp;!=&nbsp;server.me,&nbsp;you&nbsp;need&nbsp;Manage&nbsp;Messages&nbsp;to&nbsp;remove&nbsp;the&nbsp;reaction.<br>
+&nbsp;<br>
+The&nbsp;message&nbsp;must&nbsp;be&nbsp;a&nbsp;:class:`Message`&nbsp;that&nbsp;exists.&nbsp;emoji&nbsp;may&nbsp;be&nbsp;a&nbsp;unicode&nbsp;emoji,<br>
+or&nbsp;a&nbsp;custom&nbsp;server&nbsp;:class:`Emoji`.<br>
+&nbsp;<br>
+Parameters<br>
+------------<br>
+message&nbsp;:&nbsp;:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message.<br>
+emoji&nbsp;:&nbsp;:class:`Emoji`&nbsp;or&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;emoji&nbsp;to&nbsp;remove.<br>
+member&nbsp;:&nbsp;:class:`Member`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;member&nbsp;for&nbsp;which&nbsp;to&nbsp;delete&nbsp;the&nbsp;reaction.<br>
+&nbsp;<br>
+Raises<br>
+--------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Removing&nbsp;the&nbsp;reaction&nbsp;failed.<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;remove&nbsp;the&nbsp;reaction.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;emoji&nbsp;you&nbsp;specified&nbsp;was&nbsp;not&nbsp;found.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;emoji&nbsp;parameter&nbsp;is&nbsp;invalid.</tt></dd></dl>
+
+<dl><dt><a name="Bot-remove_roles"><strong>remove_roles</strong></a>(self, member, *roles)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Removes&nbsp;the&nbsp;:class:`Role`&nbsp;s&nbsp;from&nbsp;the&nbsp;:class:`Member`.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;use&nbsp;this&nbsp;function.<br>
+&nbsp;<br>
+The&nbsp;:class:`Member`&nbsp;object&nbsp;is&nbsp;not&nbsp;directly&nbsp;modified&nbsp;afterwards&nbsp;until&nbsp;the<br>
+corresponding&nbsp;WebSocket&nbsp;event&nbsp;is&nbsp;received.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+member&nbsp;:&nbsp;:class:`Member`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;member&nbsp;to&nbsp;revoke&nbsp;roles&nbsp;from.<br>
+\*roles<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;argument&nbsp;list&nbsp;of&nbsp;:class:`Role`&nbsp;s&nbsp;to&nbsp;revoke&nbsp;the&nbsp;member.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;revoke&nbsp;roles.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Removing&nbsp;roles&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-replace_roles"><strong>replace_roles</strong></a>(self, member, *roles)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Replaces&nbsp;the&nbsp;:class:`Member`'s&nbsp;roles.<br>
+&nbsp;<br>
+You&nbsp;must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;use&nbsp;this&nbsp;function.<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;**replaces**&nbsp;all&nbsp;roles&nbsp;that&nbsp;the&nbsp;member&nbsp;has.<br>
+For&nbsp;example&nbsp;if&nbsp;the&nbsp;member&nbsp;has&nbsp;roles&nbsp;``[a,&nbsp;b,&nbsp;c]``&nbsp;and&nbsp;the<br>
+call&nbsp;is&nbsp;``client.<a href="#Bot-replace_roles">replace_roles</a>(member,&nbsp;d,&nbsp;e,&nbsp;c)``&nbsp;then<br>
+the&nbsp;member&nbsp;has&nbsp;the&nbsp;roles&nbsp;``[d,&nbsp;e,&nbsp;c]``.<br>
+&nbsp;<br>
+The&nbsp;:class:`Member`&nbsp;object&nbsp;is&nbsp;not&nbsp;directly&nbsp;modified&nbsp;afterwards&nbsp;until&nbsp;the<br>
+corresponding&nbsp;WebSocket&nbsp;event&nbsp;is&nbsp;received.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+member&nbsp;:&nbsp;:class:`Member`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;member&nbsp;to&nbsp;replace&nbsp;roles&nbsp;from.<br>
+\*roles<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;argument&nbsp;list&nbsp;of&nbsp;:class:`Role`&nbsp;s&nbsp;to&nbsp;replace&nbsp;the&nbsp;roles&nbsp;with.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;revoke&nbsp;roles.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Removing&nbsp;roles&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-request_offline_members"><strong>request_offline_members</strong></a>(self, server)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Requests&nbsp;previously&nbsp;offline&nbsp;members&nbsp;from&nbsp;the&nbsp;server&nbsp;to&nbsp;be&nbsp;filled&nbsp;up<br>
+into&nbsp;the&nbsp;:attr:`Server.members`&nbsp;cache.&nbsp;This&nbsp;function&nbsp;is&nbsp;usually&nbsp;not<br>
+called.<br>
+&nbsp;<br>
+When&nbsp;the&nbsp;client&nbsp;logs&nbsp;on&nbsp;and&nbsp;connects&nbsp;to&nbsp;the&nbsp;websocket,&nbsp;Discord&nbsp;does<br>
+not&nbsp;provide&nbsp;the&nbsp;library&nbsp;with&nbsp;offline&nbsp;members&nbsp;if&nbsp;the&nbsp;number&nbsp;of&nbsp;members<br>
+in&nbsp;the&nbsp;server&nbsp;is&nbsp;larger&nbsp;than&nbsp;250.&nbsp;You&nbsp;can&nbsp;check&nbsp;if&nbsp;a&nbsp;server&nbsp;is&nbsp;large<br>
+if&nbsp;:attr:`Server.large`&nbsp;is&nbsp;``True``.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server&nbsp;:&nbsp;:class:`Server`&nbsp;or&nbsp;iterable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;request&nbsp;offline&nbsp;members&nbsp;for.&nbsp;If&nbsp;this&nbsp;parameter&nbsp;is&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;iterable&nbsp;then&nbsp;it&nbsp;is&nbsp;interpreted&nbsp;as&nbsp;an&nbsp;iterator&nbsp;of&nbsp;servers&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;request&nbsp;offline&nbsp;members&nbsp;for.</tt></dd></dl>
+
+<dl><dt><a name="Bot-run"><strong>run</strong></a>(self, *args, **kwargs)</dt><dd><tt>A&nbsp;blocking&nbsp;call&nbsp;that&nbsp;abstracts&nbsp;away&nbsp;the&nbsp;`event&nbsp;loop`_<br>
+initialisation&nbsp;from&nbsp;you.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;want&nbsp;more&nbsp;control&nbsp;over&nbsp;the&nbsp;event&nbsp;loop&nbsp;then&nbsp;this<br>
+function&nbsp;should&nbsp;not&nbsp;be&nbsp;used.&nbsp;Use&nbsp;:meth:`start`&nbsp;coroutine<br>
+or&nbsp;:meth:`connect`&nbsp;+&nbsp;:meth:`login`.<br>
+&nbsp;<br>
+Roughly&nbsp;Equivalent&nbsp;to:&nbsp;::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;try:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loop.run_until_complete(<a href="#Bot-start">start</a>(*args,&nbsp;**kwargs))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;except&nbsp;KeyboardInterrupt:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loop.run_until_complete(<a href="#Bot-logout">logout</a>())<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;cancel&nbsp;all&nbsp;tasks&nbsp;lingering<br>
+&nbsp;&nbsp;&nbsp;&nbsp;finally:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loop.<a href="#Bot-close">close</a>()<br>
+&nbsp;<br>
+Warning<br>
+--------<br>
+This&nbsp;function&nbsp;must&nbsp;be&nbsp;the&nbsp;last&nbsp;function&nbsp;to&nbsp;call&nbsp;due&nbsp;to&nbsp;the&nbsp;fact&nbsp;that&nbsp;it<br>
+is&nbsp;blocking.&nbsp;That&nbsp;means&nbsp;that&nbsp;registration&nbsp;of&nbsp;events&nbsp;or&nbsp;anything&nbsp;being<br>
+called&nbsp;after&nbsp;this&nbsp;function&nbsp;call&nbsp;will&nbsp;not&nbsp;execute&nbsp;until&nbsp;it&nbsp;returns.</tt></dd></dl>
+
+<dl><dt><a name="Bot-send_file"><strong>send_file</strong></a>(self, destination, fp, *, filename=None, content=None, tts=False)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Sends&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;destination&nbsp;given&nbsp;with&nbsp;the&nbsp;file&nbsp;given.<br>
+&nbsp;<br>
+The&nbsp;destination&nbsp;parameter&nbsp;follows&nbsp;the&nbsp;same&nbsp;rules&nbsp;as&nbsp;:meth:`send_message`.<br>
+&nbsp;<br>
+The&nbsp;``fp``&nbsp;parameter&nbsp;should&nbsp;be&nbsp;either&nbsp;a&nbsp;string&nbsp;denoting&nbsp;the&nbsp;location&nbsp;for&nbsp;a<br>
+file&nbsp;or&nbsp;a&nbsp;*file-like&nbsp;object*.&nbsp;The&nbsp;*file-like&nbsp;object*&nbsp;passed&nbsp;is&nbsp;**not&nbsp;closed**<br>
+at&nbsp;the&nbsp;end&nbsp;of&nbsp;execution.&nbsp;You&nbsp;are&nbsp;responsible&nbsp;for&nbsp;closing&nbsp;it&nbsp;yourself.<br>
+&nbsp;<br>
+..&nbsp;note::<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;file-like&nbsp;object&nbsp;passed&nbsp;is&nbsp;opened&nbsp;via&nbsp;``open``&nbsp;then&nbsp;the&nbsp;modes<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'rb'&nbsp;should&nbsp;be&nbsp;used.<br>
+&nbsp;<br>
+The&nbsp;``filename``&nbsp;parameter&nbsp;is&nbsp;the&nbsp;filename&nbsp;of&nbsp;the&nbsp;file.<br>
+If&nbsp;this&nbsp;is&nbsp;not&nbsp;given&nbsp;then&nbsp;it&nbsp;defaults&nbsp;to&nbsp;``fp.name``&nbsp;or&nbsp;if&nbsp;``fp``&nbsp;is&nbsp;a&nbsp;string<br>
+then&nbsp;the&nbsp;``filename``&nbsp;will&nbsp;default&nbsp;to&nbsp;the&nbsp;string&nbsp;given.&nbsp;You&nbsp;can&nbsp;overwrite<br>
+this&nbsp;value&nbsp;by&nbsp;passing&nbsp;this&nbsp;in.<br>
+&nbsp;<br>
+Parameters<br>
+------------<br>
+destination<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;location&nbsp;to&nbsp;send&nbsp;the&nbsp;message.<br>
+fp<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;*file-like&nbsp;object*&nbsp;or&nbsp;file&nbsp;path&nbsp;to&nbsp;send.<br>
+filename&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;filename&nbsp;of&nbsp;the&nbsp;file.&nbsp;Defaults&nbsp;to&nbsp;``fp.name``&nbsp;if&nbsp;it's&nbsp;available.<br>
+content<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;content&nbsp;of&nbsp;the&nbsp;message&nbsp;to&nbsp;send&nbsp;along&nbsp;with&nbsp;the&nbsp;file.&nbsp;This&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;forced&nbsp;into&nbsp;a&nbsp;string&nbsp;by&nbsp;a&nbsp;``str(content)``&nbsp;call.<br>
+tts&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;content&nbsp;of&nbsp;the&nbsp;message&nbsp;should&nbsp;be&nbsp;sent&nbsp;with&nbsp;TTS&nbsp;enabled.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sending&nbsp;the&nbsp;file&nbsp;failed.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;sent.</tt></dd></dl>
+
+<dl><dt><a name="Bot-send_message"><strong>send_message</strong></a>(self, destination, content=None, *, tts=False, embed=None)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Sends&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;destination&nbsp;given&nbsp;with&nbsp;the&nbsp;content&nbsp;given.<br>
+&nbsp;<br>
+The&nbsp;destination&nbsp;could&nbsp;be&nbsp;a&nbsp;:class:`Channel`,&nbsp;:class:`PrivateChannel`&nbsp;or&nbsp;:class:`Server`.<br>
+For&nbsp;convenience&nbsp;it&nbsp;could&nbsp;also&nbsp;be&nbsp;a&nbsp;:class:`User`.&nbsp;If&nbsp;it's&nbsp;a&nbsp;:class:`User`&nbsp;or&nbsp;:class:`PrivateChannel`<br>
+then&nbsp;it&nbsp;sends&nbsp;the&nbsp;message&nbsp;via&nbsp;private&nbsp;message,&nbsp;otherwise&nbsp;it&nbsp;sends&nbsp;the&nbsp;message&nbsp;to&nbsp;the&nbsp;channel.<br>
+If&nbsp;the&nbsp;destination&nbsp;is&nbsp;a&nbsp;:class:`Server`&nbsp;then&nbsp;it's&nbsp;equivalent&nbsp;to&nbsp;calling<br>
+:attr:`Server.default_channel`&nbsp;and&nbsp;sending&nbsp;it&nbsp;there.<br>
+&nbsp;<br>
+If&nbsp;it&nbsp;is&nbsp;a&nbsp;:class:`Object`&nbsp;instance&nbsp;then&nbsp;it&nbsp;is&nbsp;assumed&nbsp;to&nbsp;be&nbsp;the<br>
+destination&nbsp;ID.&nbsp;The&nbsp;destination&nbsp;ID&nbsp;is&nbsp;a&nbsp;*channel*&nbsp;so&nbsp;passing&nbsp;in&nbsp;a&nbsp;user<br>
+ID&nbsp;will&nbsp;not&nbsp;be&nbsp;a&nbsp;valid&nbsp;destination.<br>
+&nbsp;<br>
+..&nbsp;versionchanged::&nbsp;0.9.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;``str``&nbsp;being&nbsp;allowed&nbsp;was&nbsp;removed&nbsp;and&nbsp;replaced&nbsp;with&nbsp;:class:`Object`.<br>
+&nbsp;<br>
+The&nbsp;content&nbsp;must&nbsp;be&nbsp;a&nbsp;type&nbsp;that&nbsp;can&nbsp;convert&nbsp;to&nbsp;a&nbsp;string&nbsp;through&nbsp;``str(content)``.<br>
+If&nbsp;the&nbsp;content&nbsp;is&nbsp;set&nbsp;to&nbsp;``None``&nbsp;(the&nbsp;default),&nbsp;then&nbsp;the&nbsp;``embed``&nbsp;parameter&nbsp;must<br>
+be&nbsp;provided.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;``embed``&nbsp;parameter&nbsp;is&nbsp;provided,&nbsp;it&nbsp;must&nbsp;be&nbsp;of&nbsp;type&nbsp;:class:`Embed`&nbsp;and<br>
+it&nbsp;must&nbsp;be&nbsp;a&nbsp;rich&nbsp;embed&nbsp;type.<br>
+&nbsp;<br>
+Parameters<br>
+------------<br>
+destination<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;location&nbsp;to&nbsp;send&nbsp;the&nbsp;message.<br>
+content<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;content&nbsp;of&nbsp;the&nbsp;message&nbsp;to&nbsp;send.&nbsp;If&nbsp;this&nbsp;is&nbsp;missing,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;then&nbsp;the&nbsp;``embed``&nbsp;parameter&nbsp;must&nbsp;be&nbsp;present.<br>
+tts&nbsp;:&nbsp;bool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Indicates&nbsp;if&nbsp;the&nbsp;message&nbsp;should&nbsp;be&nbsp;sent&nbsp;using&nbsp;text-to-speech.<br>
+embed:&nbsp;:class:`Embed`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;rich&nbsp;embed&nbsp;for&nbsp;the&nbsp;content.<br>
+&nbsp;<br>
+Raises<br>
+--------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sending&nbsp;the&nbsp;message&nbsp;failed.<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;send&nbsp;the&nbsp;message.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;destination&nbsp;was&nbsp;not&nbsp;found&nbsp;and&nbsp;hence&nbsp;is&nbsp;invalid.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;destination&nbsp;parameter&nbsp;is&nbsp;invalid.<br>
+&nbsp;<br>
+Examples<br>
+----------<br>
+&nbsp;<br>
+Sending&nbsp;a&nbsp;regular&nbsp;message:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'Hello')<br>
+&nbsp;<br>
+Sending&nbsp;a&nbsp;TTS&nbsp;message:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'Goodbye.',&nbsp;tts=True)<br>
+&nbsp;<br>
+Sending&nbsp;an&nbsp;embed&nbsp;message:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;em&nbsp;=&nbsp;discord.Embed(title='My&nbsp;Embed&nbsp;Title',&nbsp;description='My&nbsp;Embed&nbsp;Content.',&nbsp;colour=0xDEADBF)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;em.set_author(name='Someone',&nbsp;icon_url=client.user.default_avatar_url)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;embed=em)<br>
+&nbsp;<br>
+Returns<br>
+---------<br>
+:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;that&nbsp;was&nbsp;sent.</tt></dd></dl>
+
+<dl><dt><a name="Bot-send_typing"><strong>send_typing</strong></a>(self, destination)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Send&nbsp;a&nbsp;*typing*&nbsp;status&nbsp;to&nbsp;the&nbsp;destination.<br>
+&nbsp;<br>
+*Typing*&nbsp;status&nbsp;will&nbsp;go&nbsp;away&nbsp;after&nbsp;10&nbsp;seconds,&nbsp;or&nbsp;after&nbsp;a&nbsp;message&nbsp;is&nbsp;sent.<br>
+&nbsp;<br>
+The&nbsp;destination&nbsp;parameter&nbsp;follows&nbsp;the&nbsp;same&nbsp;rules&nbsp;as&nbsp;:meth:`send_message`.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+destination<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;location&nbsp;to&nbsp;send&nbsp;the&nbsp;typing&nbsp;update.</tt></dd></dl>
+
+<dl><dt><a name="Bot-server_voice_state"><strong>server_voice_state</strong></a>(self, member, *, mute=None, deafen=None)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Server&nbsp;mutes&nbsp;or&nbsp;deafens&nbsp;a&nbsp;specific&nbsp;:class:`Member`.<br>
+&nbsp;<br>
+Warning<br>
+--------<br>
+This&nbsp;function&nbsp;mutes&nbsp;or&nbsp;un-deafens&nbsp;the&nbsp;:class:`Member`&nbsp;based&nbsp;on&nbsp;the<br>
+server&nbsp;it&nbsp;belongs&nbsp;to,&nbsp;which&nbsp;is&nbsp;accessed&nbsp;via&nbsp;:attr:`Member.server`.<br>
+So&nbsp;you&nbsp;must&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;in&nbsp;that&nbsp;server.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+member&nbsp;:&nbsp;:class:`Member`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;member&nbsp;to&nbsp;unban&nbsp;from&nbsp;their&nbsp;server.<br>
+mute:&nbsp;Optional[bool]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Indicates&nbsp;if&nbsp;the&nbsp;member&nbsp;should&nbsp;be&nbsp;server&nbsp;muted&nbsp;or&nbsp;un-muted.<br>
+deafen:&nbsp;Optional[bool]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Indicates&nbsp;if&nbsp;the&nbsp;member&nbsp;should&nbsp;be&nbsp;server&nbsp;deafened&nbsp;or&nbsp;un-deafened.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;deafen&nbsp;or&nbsp;mute.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;operation&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-start"><strong>start</strong></a>(self, *args, **kwargs)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+A&nbsp;shorthand&nbsp;coroutine&nbsp;for&nbsp;:meth:`login`&nbsp;+&nbsp;:meth:`connect`.</tt></dd></dl>
+
+<dl><dt><a name="Bot-start_private_message"><strong>start_private_message</strong></a>(self, user)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Starts&nbsp;a&nbsp;private&nbsp;message&nbsp;with&nbsp;the&nbsp;user.&nbsp;This&nbsp;allows&nbsp;you&nbsp;to<br>
+:meth:`send_message`&nbsp;to&nbsp;the&nbsp;user.<br>
+&nbsp;<br>
+Note<br>
+-----<br>
+This&nbsp;method&nbsp;should&nbsp;rarely&nbsp;be&nbsp;called&nbsp;as&nbsp;:meth:`send_message`<br>
+does&nbsp;it&nbsp;automatically&nbsp;for&nbsp;you.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+user&nbsp;:&nbsp;:class:`User`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;user&nbsp;to&nbsp;start&nbsp;the&nbsp;private&nbsp;message&nbsp;with.<br>
+&nbsp;<br>
+Raises<br>
+------<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;request&nbsp;failed.<br>
+InvalidArgument<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;user&nbsp;argument&nbsp;was&nbsp;not&nbsp;of&nbsp;:class:`User`.</tt></dd></dl>
+
+<dl><dt><a name="Bot-unban"><strong>unban</strong></a>(self, server, user)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Unbans&nbsp;a&nbsp;:class:`User`&nbsp;from&nbsp;the&nbsp;server&nbsp;they&nbsp;are&nbsp;banned&nbsp;from.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;unban&nbsp;the&nbsp;user&nbsp;from.<br>
+user&nbsp;:&nbsp;:class:`User`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;user&nbsp;to&nbsp;unban.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;the&nbsp;proper&nbsp;permissions&nbsp;to&nbsp;unban.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Unbanning&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-unpin_message"><strong>unpin_message</strong></a>(self, message)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Unpins&nbsp;a&nbsp;message.&nbsp;You&nbsp;must&nbsp;have&nbsp;Manage&nbsp;Messages&nbsp;permissions<br>
+to&nbsp;do&nbsp;this&nbsp;in&nbsp;a&nbsp;non-private&nbsp;channel&nbsp;context.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+message:&nbsp;:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;to&nbsp;unpin.<br>
+&nbsp;<br>
+Raises<br>
+-------<br>
+Forbidden<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;do&nbsp;not&nbsp;have&nbsp;permissions&nbsp;to&nbsp;unpin&nbsp;the&nbsp;message.<br>
+NotFound<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;or&nbsp;channel&nbsp;was&nbsp;not&nbsp;found.<br>
+HTTPException<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Unpinning&nbsp;the&nbsp;message&nbsp;failed.</tt></dd></dl>
+
+<dl><dt><a name="Bot-voice_client_in"><strong>voice_client_in</strong></a>(self, server)</dt><dd><tt>Returns&nbsp;the&nbsp;voice&nbsp;client&nbsp;associated&nbsp;with&nbsp;a&nbsp;server.<br>
+&nbsp;<br>
+If&nbsp;no&nbsp;voice&nbsp;client&nbsp;is&nbsp;found&nbsp;then&nbsp;``None``&nbsp;is&nbsp;returned.<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+server&nbsp;:&nbsp;:class:`Server`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;server&nbsp;to&nbsp;query&nbsp;if&nbsp;we&nbsp;have&nbsp;a&nbsp;voice&nbsp;client&nbsp;for.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`VoiceClient`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;voice&nbsp;client&nbsp;associated&nbsp;with&nbsp;the&nbsp;server.</tt></dd></dl>
+
+<dl><dt><a name="Bot-wait_for_message"><strong>wait_for_message</strong></a>(self, timeout=None, *, author=None, channel=None, content=None, check=None)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Waits&nbsp;for&nbsp;a&nbsp;message&nbsp;reply&nbsp;from&nbsp;Discord.&nbsp;This&nbsp;could&nbsp;be&nbsp;seen&nbsp;as&nbsp;another<br>
+:func:`discord.on_message`&nbsp;event&nbsp;outside&nbsp;of&nbsp;the&nbsp;actual&nbsp;event.&nbsp;This&nbsp;could<br>
+also&nbsp;be&nbsp;used&nbsp;for&nbsp;follow-ups&nbsp;and&nbsp;easier&nbsp;user&nbsp;interactions.<br>
+&nbsp;<br>
+The&nbsp;keyword&nbsp;arguments&nbsp;passed&nbsp;into&nbsp;this&nbsp;function&nbsp;are&nbsp;combined&nbsp;using&nbsp;the&nbsp;logical&nbsp;and<br>
+operator.&nbsp;The&nbsp;``check``&nbsp;keyword&nbsp;argument&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;pass&nbsp;in&nbsp;more&nbsp;complicated<br>
+checks&nbsp;and&nbsp;must&nbsp;be&nbsp;a&nbsp;regular&nbsp;function&nbsp;(not&nbsp;a&nbsp;coroutine).<br>
+&nbsp;<br>
+The&nbsp;``timeout``&nbsp;parameter&nbsp;is&nbsp;passed&nbsp;into&nbsp;`asyncio.wait_for`_.&nbsp;By&nbsp;default,&nbsp;it<br>
+does&nbsp;not&nbsp;timeout.&nbsp;Instead&nbsp;of&nbsp;throwing&nbsp;``asyncio.TimeoutError``&nbsp;the&nbsp;coroutine<br>
+catches&nbsp;the&nbsp;exception&nbsp;and&nbsp;returns&nbsp;``None``&nbsp;instead&nbsp;of&nbsp;a&nbsp;:class:`Message`.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;``check``&nbsp;predicate&nbsp;throws&nbsp;an&nbsp;exception,&nbsp;then&nbsp;the&nbsp;exception&nbsp;is&nbsp;propagated.<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;returns&nbsp;the&nbsp;**first&nbsp;message&nbsp;that&nbsp;meets&nbsp;the&nbsp;requirements**.<br>
+&nbsp;<br>
+..&nbsp;_asyncio.wait_for:&nbsp;https://docs.python.org/3/library/asyncio-task.html#asyncio.wait_for<br>
+&nbsp;<br>
+Examples<br>
+----------<br>
+&nbsp;<br>
+Basic&nbsp;example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:emphasize-lines:&nbsp;5<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;@client.event<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;<a href="#Bot-on_message">on_message</a>(message):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;message.content.startswith('$greet'):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'Say&nbsp;hello')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;msg&nbsp;=&nbsp;await&nbsp;client.<a href="#Bot-wait_for_message">wait_for_message</a>(author=message.author,&nbsp;content='hello')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'Hello.')<br>
+&nbsp;<br>
+Asking&nbsp;for&nbsp;a&nbsp;follow-up&nbsp;question:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:emphasize-lines:&nbsp;6<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;@client.event<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;<a href="#Bot-on_message">on_message</a>(message):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;message.content.startswith('$start'):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'Type&nbsp;$stop&nbsp;4&nbsp;times.')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;i&nbsp;in&nbsp;range(4):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;msg&nbsp;=&nbsp;await&nbsp;client.<a href="#Bot-wait_for_message">wait_for_message</a>(author=message.author,&nbsp;content='$stop')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fmt&nbsp;=&nbsp;'{}&nbsp;left&nbsp;to&nbsp;go...'<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;fmt.format(3&nbsp;-&nbsp;i))<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'Good&nbsp;job!')<br>
+&nbsp;<br>
+Advanced&nbsp;filters&nbsp;using&nbsp;``check``:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:emphasize-lines:&nbsp;9<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;@client.event<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;<a href="#Bot-on_message">on_message</a>(message):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;message.content.startswith('$cool'):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'Who&nbsp;is&nbsp;cool?&nbsp;Type&nbsp;$name&nbsp;namehere')<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;check(msg):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;msg.content.startswith('$name')<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message&nbsp;=&nbsp;await&nbsp;client.<a href="#Bot-wait_for_message">wait_for_message</a>(author=message.author,&nbsp;check=check)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;=&nbsp;message.content[len('$name'):].strip()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'{}&nbsp;is&nbsp;cool&nbsp;indeed'.format(name))<br>
+&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+timeout&nbsp;:&nbsp;float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;seconds&nbsp;to&nbsp;wait&nbsp;before&nbsp;returning&nbsp;``None``.<br>
+author&nbsp;:&nbsp;:class:`Member`&nbsp;or&nbsp;:class:`User`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;author&nbsp;the&nbsp;message&nbsp;must&nbsp;be&nbsp;from.<br>
+channel&nbsp;:&nbsp;:class:`Channel`&nbsp;or&nbsp;:class:`PrivateChannel`&nbsp;or&nbsp;:class:`Object`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;channel&nbsp;the&nbsp;message&nbsp;must&nbsp;be&nbsp;from.<br>
+content&nbsp;:&nbsp;str<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;exact&nbsp;content&nbsp;the&nbsp;message&nbsp;must&nbsp;have.<br>
+check&nbsp;:&nbsp;function<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;predicate&nbsp;for&nbsp;other&nbsp;complicated&nbsp;checks.&nbsp;The&nbsp;predicate&nbsp;must&nbsp;take<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;:class:`Message`&nbsp;as&nbsp;its&nbsp;only&nbsp;parameter.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;that&nbsp;you&nbsp;requested&nbsp;for.</tt></dd></dl>
+
+<dl><dt><a name="Bot-wait_for_reaction"><strong>wait_for_reaction</strong></a>(self, emoji=None, *, user=None, timeout=None, message=None, check=None)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+Waits&nbsp;for&nbsp;a&nbsp;message&nbsp;reaction&nbsp;from&nbsp;Discord.&nbsp;This&nbsp;is&nbsp;similar&nbsp;to&nbsp;:meth:`wait_for_message`<br>
+and&nbsp;could&nbsp;be&nbsp;seen&nbsp;as&nbsp;another&nbsp;:func:`on_reaction_add`&nbsp;event&nbsp;outside&nbsp;of&nbsp;the&nbsp;actual&nbsp;event.<br>
+This&nbsp;could&nbsp;be&nbsp;used&nbsp;for&nbsp;follow&nbsp;up&nbsp;situations.<br>
+&nbsp;<br>
+Similar&nbsp;to&nbsp;:meth:`wait_for_message`,&nbsp;the&nbsp;keyword&nbsp;arguments&nbsp;are&nbsp;combined&nbsp;using&nbsp;logical<br>
+AND&nbsp;operator.&nbsp;The&nbsp;``check``&nbsp;keyword&nbsp;argument&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;pass&nbsp;in&nbsp;more&nbsp;complicated<br>
+checks&nbsp;and&nbsp;must&nbsp;a&nbsp;regular&nbsp;function&nbsp;taking&nbsp;in&nbsp;two&nbsp;arguments,&nbsp;``(reaction,&nbsp;user)``.&nbsp;It<br>
+must&nbsp;not&nbsp;be&nbsp;a&nbsp;coroutine.<br>
+&nbsp;<br>
+The&nbsp;``timeout``&nbsp;parameter&nbsp;is&nbsp;passed&nbsp;into&nbsp;asyncio.wait_for.&nbsp;By&nbsp;default,&nbsp;it<br>
+does&nbsp;not&nbsp;timeout.&nbsp;Instead&nbsp;of&nbsp;throwing&nbsp;``asyncio.TimeoutError``&nbsp;the&nbsp;coroutine<br>
+catches&nbsp;the&nbsp;exception&nbsp;and&nbsp;returns&nbsp;``None``&nbsp;instead&nbsp;of&nbsp;a&nbsp;the&nbsp;``(reaction,&nbsp;user)``<br>
+tuple.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;``check``&nbsp;predicate&nbsp;throws&nbsp;an&nbsp;exception,&nbsp;then&nbsp;the&nbsp;exception&nbsp;is&nbsp;propagated.<br>
+&nbsp;<br>
+The&nbsp;``emoji``&nbsp;parameter&nbsp;can&nbsp;be&nbsp;either&nbsp;a&nbsp;:class:`Emoji`,&nbsp;a&nbsp;``str``&nbsp;representing<br>
+an&nbsp;emoji,&nbsp;or&nbsp;a&nbsp;sequence&nbsp;of&nbsp;either&nbsp;type.&nbsp;If&nbsp;the&nbsp;``emoji``&nbsp;parameter&nbsp;is&nbsp;a&nbsp;sequence<br>
+then&nbsp;the&nbsp;first&nbsp;reaction&nbsp;emoji&nbsp;that&nbsp;is&nbsp;in&nbsp;the&nbsp;list&nbsp;is&nbsp;returned.&nbsp;If&nbsp;``None``&nbsp;is<br>
+passed&nbsp;then&nbsp;the&nbsp;first&nbsp;reaction&nbsp;emoji&nbsp;used&nbsp;is&nbsp;returned.<br>
+&nbsp;<br>
+This&nbsp;function&nbsp;returns&nbsp;the&nbsp;**first&nbsp;reaction&nbsp;that&nbsp;meets&nbsp;the&nbsp;requirements**.<br>
+&nbsp;<br>
+Examples<br>
+---------<br>
+&nbsp;<br>
+Basic&nbsp;Example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;@client.event<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;<a href="#Bot-on_message">on_message</a>(message):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;message.content.startswith('$react'):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;msg&nbsp;=&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'React&nbsp;with&nbsp;thumbs&nbsp;up&nbsp;or&nbsp;thumbs&nbsp;down.')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;=&nbsp;await&nbsp;client.<a href="#Bot-wait_for_reaction">wait_for_reaction</a>(['👍',&nbsp;'👎'],&nbsp;message=msg)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'{0.user}&nbsp;reacted&nbsp;with&nbsp;{0.reaction.emoji}!'.format(res))<br>
+&nbsp;<br>
+Checking&nbsp;for&nbsp;reaction&nbsp;emoji&nbsp;regardless&nbsp;of&nbsp;skin&nbsp;tone:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;@client.event<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;<a href="#Bot-on_message">on_message</a>(message):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;message.content.startswith('$react'):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;msg&nbsp;=&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'React&nbsp;with&nbsp;thumbs&nbsp;up&nbsp;or&nbsp;thumbs&nbsp;down.')<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;check(reaction,&nbsp;user):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e&nbsp;=&nbsp;str(reaction.emoji)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;e.startswith(('👍',&nbsp;'👎'))<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res&nbsp;=&nbsp;await&nbsp;client.<a href="#Bot-wait_for_reaction">wait_for_reaction</a>(message=msg,&nbsp;check=check)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;client.<a href="#Bot-send_message">send_message</a>(message.channel,&nbsp;'{0.user}&nbsp;reacted&nbsp;with&nbsp;{0.reaction.emoji}!'.format(res))<br>
+&nbsp;<br>
+Parameters<br>
+-----------<br>
+timeout:&nbsp;float<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;number&nbsp;of&nbsp;seconds&nbsp;to&nbsp;wait&nbsp;before&nbsp;returning&nbsp;``None``.<br>
+user:&nbsp;:class:`Member`&nbsp;or&nbsp;:class:`User`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;user&nbsp;the&nbsp;reaction&nbsp;must&nbsp;be&nbsp;from.<br>
+emoji:&nbsp;str&nbsp;or&nbsp;:class:`Emoji`&nbsp;or&nbsp;sequence<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;emoji&nbsp;that&nbsp;we&nbsp;are&nbsp;waiting&nbsp;to&nbsp;react&nbsp;with.<br>
+message:&nbsp;:class:`Message`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;message&nbsp;that&nbsp;we&nbsp;want&nbsp;the&nbsp;reaction&nbsp;to&nbsp;be&nbsp;from.<br>
+check:&nbsp;function<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;predicate&nbsp;for&nbsp;other&nbsp;complicated&nbsp;checks.&nbsp;The&nbsp;predicate&nbsp;must&nbsp;take<br>
+&nbsp;&nbsp;&nbsp;&nbsp;``(reaction,&nbsp;user)``&nbsp;as&nbsp;its&nbsp;two&nbsp;parameters,&nbsp;which&nbsp;``reaction``&nbsp;being&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:class:`Reaction`&nbsp;and&nbsp;``user``&nbsp;being&nbsp;either&nbsp;a&nbsp;:class:`User`&nbsp;or&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;:class:`Member`.<br>
+&nbsp;<br>
+Returns<br>
+--------<br>
+namedtuple<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;namedtuple&nbsp;with&nbsp;attributes&nbsp;``reaction``&nbsp;and&nbsp;``user``&nbsp;similar&nbsp;to&nbsp;:func:`on_reaction_add`.</tt></dd></dl>
+
+<dl><dt><a name="Bot-wait_until_login"><strong>wait_until_login</strong></a>(self)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+This&nbsp;coroutine&nbsp;waits&nbsp;until&nbsp;the&nbsp;client&nbsp;is&nbsp;logged&nbsp;on&nbsp;successfully.&nbsp;This<br>
+is&nbsp;different&nbsp;from&nbsp;waiting&nbsp;until&nbsp;the&nbsp;client's&nbsp;state&nbsp;is&nbsp;all&nbsp;ready.&nbsp;For<br>
+that&nbsp;check&nbsp;:func:`discord.on_ready`&nbsp;and&nbsp;:meth:`wait_until_ready`.</tt></dd></dl>
+
+<dl><dt><a name="Bot-wait_until_ready"><strong>wait_until_ready</strong></a>(self)</dt><dd><tt>|coro|<br>
+&nbsp;<br>
+This&nbsp;coroutine&nbsp;waits&nbsp;until&nbsp;the&nbsp;client&nbsp;is&nbsp;all&nbsp;ready.&nbsp;This&nbsp;could&nbsp;be&nbsp;considered<br>
+another&nbsp;way&nbsp;of&nbsp;asking&nbsp;for&nbsp;:func:`discord.on_ready`&nbsp;except&nbsp;meant&nbsp;for&nbsp;your&nbsp;own<br>
+background&nbsp;tasks.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="discord.client.html#Client">discord.client.Client</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>is_closed</strong></dt>
+<dd><tt>bool:&nbsp;Indicates&nbsp;if&nbsp;the&nbsp;websocket&nbsp;connection&nbsp;is&nbsp;closed.</tt></dd>
+</dl>
+<dl><dt><strong>is_logged_in</strong></dt>
+<dd><tt>bool:&nbsp;Indicates&nbsp;if&nbsp;the&nbsp;client&nbsp;has&nbsp;logged&nbsp;in&nbsp;successfully.</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>version_info</strong> = VersionInfo(major=0, minor=16, micro=7, releaselevel='final', serial=0)</td></tr></table>
+</body></html>
