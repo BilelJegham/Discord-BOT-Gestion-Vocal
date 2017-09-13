@@ -53,4 +53,4 @@ apiBot = 'XXXXXX'
 - `!deleteAll` : Supprime tous les canaux vocaux sauf le canal vocal *General*
 
 
-> Bilel JEGHAM : http://bilel.jegham.ml
+*Par Bilel JEGHAM : http://bilel.jegham.ml*
