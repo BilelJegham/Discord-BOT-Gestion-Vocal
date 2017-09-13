@@ -1,4 +1,4 @@
-Discord BOT
+Discord BOT Gestion Vocal
 ====
 
 > Bot utilitaire permettant la gestion des canaux vocaux d'un serveur Discord : création, suppression, déplacement des membres,...
